@@ -7,6 +7,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Pilha oficial de fontes da plataforma MiaJus - Visual Law.
+   Definida no elemento raiz para que TODA a plataforma herde a mesma fonte,
+   inclusive controles nativos (inputs, selects, textareas, botões),
+   sem depender de estilização componente por componente. */
+:root {
+  font-family:
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
 @layer base {
   :root {
     /* Change the colors to match the design system */

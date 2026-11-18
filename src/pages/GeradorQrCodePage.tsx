@@ -133,7 +133,7 @@ export const GeradorQrCodePage: React.FC = () => {
       <rect width="100%" height="100%" fill="${corFundo}"/>
       <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
-          <p style="font-family:sans-serif;font-size:12px;color:${corModulos};padding:8px;">QR Code: ${url}</p>
+          <p style="font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;font-size:12px;color:${corModulos};padding:8px;">QR Code: ${url}</p>
         </div>
       </foreignObject>
     </svg>`

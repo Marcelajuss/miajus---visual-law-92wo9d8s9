@@ -27,6 +27,10 @@ import {
   Table as TableIcon,
 } from 'lucide-react'
 
+// Pilha oficial de fontes da plataforma MiaJus - Visual Law
+const FONTE_OFICIAL =
+  "Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+
 export const FormatacaoInteligente: React.FC = () => {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
@@ -495,15 +499,19 @@ export const FormatacaoInteligente: React.FC = () => {
             </span>
           </div>
 
-          <div className="bg-slate-100 p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-inner flex justify-center">
+          <div
+            className="bg-slate-100 p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-inner flex justify-center"
+            style={{ fontFamily: FONTE_OFICIAL }}
+          >
             {/* Folha A4 simulada */}
             <div
               id="preview-peca-a4"
               className={`w-full max-w-[210mm] min-h-[297mm] bg-white p-8 sm:p-12 shadow-md rounded-sm text-slate-900 border border-slate-200/80 ${
-                estiloFonte === 'serif' ? 'font-serif' : 'font-sans'
+                estiloFonte === 'serif' ? 'font-bold tracking-tight' : 'font-sans'
               }`}
               style={{
                 lineHeight: '1.6',
+                fontFamily: FONTE_OFICIAL,
               }}
             >
               {/* Cabeçalho Visual Law */}

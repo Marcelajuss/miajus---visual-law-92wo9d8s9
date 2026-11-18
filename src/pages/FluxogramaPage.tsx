@@ -1,3 +1,7 @@
+// Pilha oficial de fontes da plataforma MiaJus - Visual Law
+const FONTE_OFICIAL =
+  "Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { salvarAcervoItem } from '@/lib/storage'
@@ -380,7 +384,7 @@ export const FluxogramaPage: React.FC = () => {
                 x="300"
                 y="30"
                 textAnchor="middle"
-                fontFamily="Georgia, serif"
+                fontFamily={FONTE_OFICIAL}
                 fontSize="16"
                 fontWeight="bold"
                 fill="#0f172a"
@@ -405,7 +409,7 @@ export const FluxogramaPage: React.FC = () => {
                       x="300"
                       y={y + 28}
                       textAnchor="middle"
-                      fontFamily="sans-serif"
+                      fontFamily={FONTE_OFICIAL}
                       fontSize="13"
                       fontWeight="bold"
                       fill="#0f172a"
@@ -416,7 +420,7 @@ export const FluxogramaPage: React.FC = () => {
                       x="300"
                       y={y + 48}
                       textAnchor="middle"
-                      fontFamily="sans-serif"
+                      fontFamily={FONTE_OFICIAL}
                       fontSize="11"
                       fill="#475569"
                     >

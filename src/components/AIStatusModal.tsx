@@ -41,9 +41,7 @@ export const AIStatusModal: React.FC<AIStatusModalProps> = ({
       <DialogContent className="sm:max-w-md bg-white border-slate-200">
         <DialogHeader className="flex flex-col items-center text-center pb-2">
           <MiaCharacter size="md" expression="guiding" className="mb-2" />
-          <DialogTitle className="text-lg font-serif font-bold text-slate-900">
-            {toolName}
-          </DialogTitle>
+          <DialogTitle className="text-lg font-bold text-slate-900">{toolName}</DialogTitle>
           <DialogDescription className="text-sm text-slate-600 mt-1">
             {toolDescription}
           </DialogDescription>

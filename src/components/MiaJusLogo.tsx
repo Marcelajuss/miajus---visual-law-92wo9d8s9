@@ -30,9 +30,7 @@ export const MiaJusLogo: React.FC<MiaJusLogoProps> = ({
 
   const content = (
     <div className={`inline-flex flex-col select-none leading-none ${className}`}>
-      <div
-        className={`font-serif font-bold text-slate-900 ${sizeClasses[size]} flex items-baseline gap-1`}
-      >
+      <div className={`font-bold text-slate-900 ${sizeClasses[size]} flex items-baseline gap-1`}>
         <span className="font-semibold tracking-normal text-slate-900">Mia</span>
         <span className="font-bold text-slate-800">Jus</span>
         <span className="font-light text-slate-400 mx-1">—</span>

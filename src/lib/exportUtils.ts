@@ -1,5 +1,8 @@
 // Utilitários para download limpo e exportação de documentos em DOCX e PDF/HTML
 
+// Pilha oficial de fontes da plataforma MiaJus - Visual Law
+const FONTE_OFICIAL = `Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`
+
 /**
  * Baixa um arquivo DOCX bem formatado com suporte a Visual Law
  * (utiliza HTML formatado compatível com o Microsoft Word como .doc / .docx)
@@ -12,7 +15,7 @@ export function exportToDocx(title: string, htmlContent: string) {
 <title>${title}</title>
 <style>
   body {
-    font-family: 'Calibri', 'Arial', sans-serif;
+    font-family: ${FONTE_OFICIAL};
     font-size: 11pt;
     line-height: 1.5;
     color: #1a1a1a;
@@ -98,7 +101,7 @@ export function exportToPdf(title: string, printableElementId: string) {
       margin: 1.8cm 1.5cm;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: ${FONTE_OFICIAL};
       color: #0f172a;
       line-height: 1.5;
       background: #ffffff;
@@ -110,7 +113,7 @@ export function exportToPdf(title: string, printableElementId: string) {
       max-width: 210mm;
       margin: 0 auto;
     }
-    h1, h2, h3 { font-family: Georgia, serif; }
+    h1, h2, h3 { font-family: ${FONTE_OFICIAL}; }
     table { width: 100%; border-collapse: collapse; }
     th, td { border: 1px solid #cbd5e1; padding: 8px; }
     th { background: #f8fafc; }
