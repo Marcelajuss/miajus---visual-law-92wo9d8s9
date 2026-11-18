@@ -39,8 +39,11 @@
     --muted: 270 25% 96%;
     --muted-foreground: 262 10% 40%;
 
-    --accent: 270 35% 96%;
-    --accent-foreground: 261 15% 11%;
+    /* Cor de destaque/acento dos botões e estados ativos: lilás claro #D8C6EE
+       (pedido da usuária - substitui o tom escuro); texto sempre escuro #1A1523
+       para contraste legível em baixa visão. Hover = lilás um pouco mais escuro. */
+    --accent: 267 54% 85%;
+    --accent-foreground: 261 25% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -59,9 +62,9 @@
 
     --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 270 35% 96%;
+    --sidebar-accent: 267 54% 85%;
 
-    --sidebar-accent-foreground: 261 15% 11%;
+    --sidebar-accent-foreground: 261 25% 11%;
 
     --sidebar-border: 271 22% 90%;
 
@@ -318,6 +321,19 @@
   /* Painel/hero claro: fundo quase branco com leve degradê lilás → rosa */
   .bg-grad-hero-claro {
     background-image: linear-gradient(135deg, #f4eff9 0%, #fdf2f8 100%);
+  }
+
+  /* Botão com cobertura preta que a usuária apontou: agora usa exatamente
+     background-color: hsl(var(--accent)) = #D8C6EE (lilás claro), com texto
+     escuro hsl(var(--accent-foreground)) = #1A1523 para contraste em baixa visão.
+     Hover = lilás um pouco mais escuro para o clique continuar perceptível. */
+  .bg-accent-lilas {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+  .bg-accent-lilas:hover:not(:disabled) {
+    background-color: #c4abe3;
+    color: #1a1523;
   }
 
   /* Título com degradê lilás → rosa (apenas em fundos claros) */

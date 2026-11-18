@@ -61,7 +61,7 @@ export const NavigationHeader: React.FC = () => {
                   to={item.rota}
                   className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg font-medium transition-colors ${
                     ativo
-                      ? 'bg-[#1A1523] text-white font-semibold shadow-sm'
+                      ? 'bg-accent-lilas font-semibold shadow-sm'
                       : 'text-slate-600 hover:text-[#1A1523] hover:bg-[#F4EFF9]'
                   }`}
                 >
@@ -112,9 +112,7 @@ export const NavigationHeader: React.FC = () => {
                   to={item.rota}
                   onClick={() => setMenuAberto(false)}
                   className={`flex items-center gap-2 px-3 py-2 rounded-lg font-medium ${
-                    ativo
-                      ? 'bg-[#1A1523] text-white font-bold'
-                      : 'text-slate-700 hover:bg-[#F4EFF9]'
+                    ativo ? 'bg-accent-lilas font-bold' : 'text-slate-700 hover:bg-[#F4EFF9]'
                   }`}
                 >
                   <Icon className="w-4 h-4" />

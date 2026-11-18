@@ -96,7 +96,7 @@ export const AIStatusModal: React.FC<AIStatusModalProps> = ({
           </Button>
           <Button
             type="button"
-            className="w-full sm:w-auto text-xs bg-[#1A1523] hover:bg-[#2D2A32] text-white flex items-center justify-center gap-1.5"
+            className="bg-accent-lilas w-full sm:w-auto text-xs flex items-center justify-center gap-1.5"
             onClick={() => {
               onOpenChange(false)
               navigate(fallbackRoute)

@@ -116,10 +116,7 @@ export const PlanosTokensPage: React.FC = () => {
               </li>
             </ul>
           </div>
-          <Button
-            className="w-full text-xs bg-white text-[#1A1523] hover:bg-[#F4EFF9] font-semibold"
-            disabled
-          >
+          <Button className="bg-accent-lilas w-full text-xs font-semibold" disabled>
             Plano Ativo na Versão 1.0
           </Button>
         </div>
