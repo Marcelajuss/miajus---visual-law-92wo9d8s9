@@ -38,7 +38,7 @@ interface IconItem {
 export const AcervoIconesPage: React.FC = () => {
   const [busca, setBusca] = useState('')
   const [categoria, setCategoria] = useState<string>('todas')
-  const [cor, setCor] = useState('#1E3A8A')
+  const [cor, setCor] = useState('#8B6FB8')
   const [tamanho, setTamanho] = useState(48)
   const [strokeWidth, setStrokeWidth] = useState(2)
   const [copiadoId, setCopiadoId] = useState<string | null>(null)
@@ -249,7 +249,7 @@ export const AcervoIconesPage: React.FC = () => {
               step="4"
               value={tamanho}
               onChange={(e) => setTamanho(Number(e.target.value))}
-              className="w-full mt-2 accent-slate-900 cursor-pointer"
+              className="w-full mt-2 accent-[#8B6FB8] cursor-pointer"
             />
           </div>
         </div>
@@ -300,7 +300,7 @@ export const AcervoIconesPage: React.FC = () => {
                   variant="outline"
                   size="sm"
                   onClick={() => baixarSvg(item)}
-                  className="text-[10px] h-7 px-1 w-full border-slate-200 text-blue-700"
+                  className="text-[10px] h-7 px-1 w-full text-[#5D4E86]"
                 >
                   SVG
                 </Button>

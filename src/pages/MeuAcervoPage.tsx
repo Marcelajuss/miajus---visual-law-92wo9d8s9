@@ -164,7 +164,7 @@ export const MeuAcervoPage: React.FC = () => {
         <div className="flex items-center gap-2">
           <Button
             onClick={() => navigate('/formatacao-inteligente?modo=novo')}
-            className="bg-slate-900 hover:bg-slate-800 text-white text-xs flex items-center gap-1.5 shadow-sm"
+            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5 shadow-sm"
           >
             <Plus className="w-3.5 h-3.5" />
             <span>Novo Projeto Visual Law</span>
@@ -260,7 +260,7 @@ export const MeuAcervoPage: React.FC = () => {
                             variant="ghost"
                             size="sm"
                             onClick={() => handleAbrir(item)}
-                            className="h-7 px-2 text-xs text-blue-700 hover:text-blue-900"
+                            className="h-7 px-2 text-xs text-[#5D4E86] hover:text-[#3E3359]"
                             title="Abrir / Editar"
                           >
                             Abrir
@@ -393,7 +393,7 @@ export const MeuAcervoPage: React.FC = () => {
               </Button>
               <Button
                 size="sm"
-                className="text-xs bg-slate-900 text-white"
+                className="text-xs bg-grad-primario bg-grad-primario-hover text-white"
                 onClick={handleSalvarRenomear}
               >
                 Salvar Novo Nome

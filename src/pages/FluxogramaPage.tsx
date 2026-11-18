@@ -44,7 +44,7 @@ export const FluxogramaPage: React.FC = () => {
       titulo: '1. Notificação Extrajudicial com Prazo de 5 Dias',
       descricao: 'Envio por AR digital ou WhatsApp corporativo com aviso de recebimento.',
       tipo: 'inicio',
-      cor: '#1E3A8A',
+      cor: '#8B6FB8',
     },
     {
       id: 'step-2',
@@ -76,7 +76,7 @@ export const FluxogramaPage: React.FC = () => {
   const adicionarEtapa = () => {
     if (!novoTitulo.trim()) return
     const corMap = {
-      inicio: '#1E3A8A',
+      inicio: '#8B6FB8',
       etapa: '#059669',
       decisao: '#D97706',
       fim: '#DC2626',
@@ -140,7 +140,7 @@ export const FluxogramaPage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
         <div>
-          <span className="text-xs uppercase font-bold tracking-widest text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+          <span className="text-xs uppercase font-bold tracking-widest text-[#8B6FB8] bg-[#F4EFF9] px-2 py-0.5 rounded border border-[#E3D9EE]">
             Ferramenta Visual
           </span>
           <h1 className="text-2xl font-serif font-bold text-slate-900 mt-1">Fluxograma</h1>
@@ -153,7 +153,7 @@ export const FluxogramaPage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <Button
             onClick={handleSalvarAcervo}
-            className="bg-slate-900 hover:bg-slate-800 text-white text-xs flex items-center gap-1.5"
+            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Salvar no Meu Acervo</span>
@@ -162,26 +162,26 @@ export const FluxogramaPage: React.FC = () => {
           <Button
             onClick={handleExportSvg}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-slate-700" />
+            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Exportar SVG</span>
           </Button>
 
           <Button
             onClick={() => exportToPdf(titulo, 'preview-fluxo-box')}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <FileCode className="w-3.5 h-3.5 text-blue-700" />
+            <FileCode className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Imprimir / PDF</span>
           </Button>
         </div>
       </div>
 
       {mensagemSucesso && (
-        <div className="flex items-center gap-2 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-emerald-600" />
+        <div className="flex items-center gap-2 p-3 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
+          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
           <span>{mensagemSucesso}</span>
         </div>
       )}
@@ -236,7 +236,7 @@ export const FluxogramaPage: React.FC = () => {
                   onChange={(e) => setNovoTipo(e.target.value as any)}
                   className="w-full text-xs rounded-md border border-slate-200 p-2 mt-1 bg-white"
                 >
-                  <option value="inicio">Início / Fato Gerador (Azul)</option>
+                  <option value="inicio">Início / Fato Gerador (Lilás)</option>
                   <option value="etapa">Procedimento / Diligência (Verde)</option>
                   <option value="decisao">Decisão / Condicional (Âmbar)</option>
                   <option value="fim">Conclusão / Medida Judicial (Vermelho)</option>
@@ -245,7 +245,7 @@ export const FluxogramaPage: React.FC = () => {
 
               <Button
                 onClick={adicionarEtapa}
-                className="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs mt-1"
+                className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs mt-1"
               >
                 <Plus className="w-3.5 h-3.5 mr-1" />
                 Adicionar Etapa

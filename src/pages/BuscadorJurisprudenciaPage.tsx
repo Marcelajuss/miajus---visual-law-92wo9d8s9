@@ -140,7 +140,7 @@ export const BuscadorJurisprudenciaPage: React.FC = () => {
         </div>
 
         <div className="text-xs text-slate-500 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm flex items-center gap-2">
-          <BookOpen className="w-3.5 h-3.5 text-blue-700" />
+          <BookOpen className="w-3.5 h-3.5 text-[#8B6FB8]" />
           <span>{resultados.length} precedentes indexados</span>
         </div>
       </div>
@@ -238,7 +238,7 @@ export const BuscadorJurisprudenciaPage: React.FC = () => {
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
                   <div className="flex items-center gap-2">
-                    <span className="px-2.5 py-0.5 rounded text-xs font-bold bg-slate-900 text-white">
+                    <span className="px-2.5 py-0.5 rounded text-xs font-bold bg-[#3E3359] text-white">
                       {item.tribunal}
                     </span>
                     <span className="font-bold text-sm text-slate-900 font-serif">
@@ -257,7 +257,7 @@ export const BuscadorJurisprudenciaPage: React.FC = () => {
                       href={item.linkOficial}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs text-blue-700 hover:underline font-semibold bg-blue-50 px-2.5 py-1 rounded border border-blue-200"
+                      className="inline-flex items-center gap-1 text-xs text-[#5D4E86] hover:underline font-semibold bg-[#F4EFF9] px-2.5 py-1 rounded border border-[#A88FBF]/50"
                     >
                       <span>Link Oficial</span>
                       <ExternalLink className="w-3 h-3" />
@@ -276,11 +276,11 @@ export const BuscadorJurisprudenciaPage: React.FC = () => {
                 </div>
 
                 {/* Tese Resumida em Destaque */}
-                <div className="p-3 rounded-xl bg-blue-50/60 border border-blue-100 text-xs">
-                  <span className="font-bold uppercase tracking-wider text-[10px] text-blue-900 block mb-0.5">
+                <div className="p-3 rounded-xl bg-[#F4EFF9]/60 border border-[#E3D9EE] text-xs">
+                  <span className="font-bold uppercase tracking-wider text-[10px] text-[#5D4E86] block mb-0.5">
                     Tese Fixada / Destaque Visual Law
                   </span>
-                  <p className="text-blue-950 font-medium leading-relaxed">{item.tese}</p>
+                  <p className="text-[#3E3359] font-medium leading-relaxed">{item.tese}</p>
                 </div>
 
                 {/* Ementa Completa */}

@@ -124,11 +124,11 @@ export const LinhaTempoPage: React.FC = () => {
       case 'dano':
         return 'bg-red-100 text-red-800 border-red-200'
       case 'notificacao':
-        return 'bg-amber-100 text-amber-800 border-amber-200'
+        return 'bg-[#F4EFF9] text-[#5D4E86] border-[#A88FBF]/40'
       case 'prescricao':
-        return 'bg-purple-100 text-purple-800 border-purple-200'
+        return 'bg-[#F4EFF9] text-[#5D4E86] border-[#A88FBF]/50'
       default:
-        return 'bg-blue-100 text-blue-800 border-blue-200'
+        return 'bg-pink-100 text-pink-800 border-pink-200'
     }
   }
 
@@ -136,7 +136,7 @@ export const LinhaTempoPage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
         <div>
-          <span className="text-xs uppercase font-bold tracking-widest text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+          <span className="text-xs uppercase font-bold tracking-widest text-[#8B6FB8] bg-[#F4EFF9] px-2 py-0.5 rounded border border-[#E3D9EE]">
             Ferramenta Visual
           </span>
           <h1 className="text-2xl font-serif font-bold text-slate-900 mt-1">Linha do Tempo</h1>
@@ -148,7 +148,7 @@ export const LinhaTempoPage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <Button
             onClick={handleSalvarAcervo}
-            className="bg-slate-900 hover:bg-slate-800 text-white text-xs flex items-center gap-1.5"
+            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Salvar no Meu Acervo</span>
@@ -157,17 +157,17 @@ export const LinhaTempoPage: React.FC = () => {
           <Button
             onClick={() => exportToPdf(titulo, 'preview-timeline-box')}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-slate-700" />
+            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Imprimir / PDF</span>
           </Button>
         </div>
       </div>
 
       {mensagemSucesso && (
-        <div className="flex items-center gap-2 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-emerald-600" />
+        <div className="flex items-center gap-2 p-3 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
+          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
           <span>{mensagemSucesso}</span>
         </div>
       )}
@@ -241,7 +241,7 @@ export const LinhaTempoPage: React.FC = () => {
 
               <Button
                 onClick={adicionarMarco}
-                className="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs mt-1"
+                className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs mt-1"
               >
                 <Plus className="w-3.5 h-3.5 mr-1" />
                 Adicionar Marco
@@ -324,10 +324,10 @@ export const LinhaTempoPage: React.FC = () => {
             <div className="relative pl-6 sm:pl-8 space-y-6 before:absolute before:left-2.5 sm:before:left-3.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-200">
               {marcos.map((marco) => (
                 <div key={marco.id} className="relative group">
-                  <div className="absolute -left-6 sm:-left-8 top-1 w-3 h-3 rounded-full bg-slate-900 ring-4 ring-white" />
-                  <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1">
+                  <div className="absolute -left-6 sm:-left-8 top-1 w-3 h-3 rounded-full bg-[#8B6FB8] ring-4 ring-white" />
+                  <div className="bg-[#F4EFF9]/60 p-3.5 rounded-xl border border-[#E3D9EE] space-y-1">
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <span className="font-mono text-xs font-bold text-blue-900 bg-blue-100/80 px-2 py-0.5 rounded">
+                      <span className="font-mono text-xs font-bold text-[#5D4E86] bg-[#F4EFF9] px-2 py-0.5 rounded">
                         {marco.data}
                       </span>
                       <span

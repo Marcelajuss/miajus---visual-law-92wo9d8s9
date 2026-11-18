@@ -12,7 +12,7 @@ export const PlanosTokensPage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Cabeçalho */}
       <div className="text-center max-w-2xl mx-auto space-y-2">
-        <span className="text-xs uppercase font-bold tracking-widest text-blue-700 bg-blue-50 px-2.5 py-1 rounded border border-blue-200">
+        <span className="text-xs uppercase font-bold tracking-widest text-[#8B6FB8] bg-[#F4EFF9] px-2.5 py-1 rounded border border-[#E3D9EE]">
           Estrutura Visual da Plataforma
         </span>
         <h1 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 tracking-tight">
@@ -38,7 +38,7 @@ export const PlanosTokensPage: React.FC = () => {
         <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Consumo Mensal</span>
-            <Sparkles className="w-4 h-4 text-blue-500" />
+            <Sparkles className="w-4 h-4 text-[#EC4899]" />
           </div>
           <p className="text-2xl font-serif font-bold text-slate-900">1.250</p>
           <p className="text-[11px] text-slate-500">Peças diagramadas no modo manual</p>
@@ -47,9 +47,9 @@ export const PlanosTokensPage: React.FC = () => {
         <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Status da Conta</span>
-            <ShieldCheck className="w-4 h-4 text-emerald-500" />
+            <ShieldCheck className="w-4 h-4 text-[#8B6FB8]" />
           </div>
-          <p className="text-2xl font-serif font-bold text-emerald-700">Ativa (v1)</p>
+          <p className="text-2xl font-serif font-bold text-[#5D4E86]">Ativa (v1)</p>
           <p className="text-[11px] text-slate-500">
             Acesso irrestrito a todas as ferramentas manuais
           </p>
@@ -81,13 +81,13 @@ export const PlanosTokensPage: React.FC = () => {
               </li>
             </ul>
           </div>
-          <Button variant="outline" className="w-full text-xs border-slate-300" disabled>
+          <Button variant="outline" className="w-full text-xs" disabled>
             Plano Estrutural (Sem Cobrança)
           </Button>
         </div>
 
         {/* Plano Pro (Destaque) */}
-        <div className="p-6 rounded-2xl bg-slate-900 text-white border-2 border-slate-800 shadow-md space-y-4 flex flex-col justify-between relative">
+        <div className="p-6 rounded-2xl bg-grad-hero text-white border-2 border-[#5D4E86] shadow-md space-y-4 flex flex-col justify-between relative">
           <span className="absolute -top-3 right-6 bg-amber-400 text-slate-950 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
             Mais Recomendado
           </span>
@@ -97,7 +97,7 @@ export const PlanosTokensPage: React.FC = () => {
             <p className="text-2xl font-bold text-white">
               R$ 189 <span className="text-xs font-normal text-slate-400">/mês (visual)</span>
             </p>
-            <ul className="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+            <ul className="text-xs text-white/85 space-y-2 pt-2 border-t border-white/20">
               <li className="flex items-center gap-2">
                 <Check className="w-3.5 h-3.5 text-amber-400" />
                 Tudo do plano Individual
@@ -117,7 +117,7 @@ export const PlanosTokensPage: React.FC = () => {
             </ul>
           </div>
           <Button
-            className="w-full text-xs bg-white text-slate-900 hover:bg-slate-100 font-semibold"
+            className="w-full text-xs bg-white text-[#1A1523] hover:bg-[#F4EFF9] font-semibold"
             disabled
           >
             Plano Ativo na Versão 1.0
@@ -147,7 +147,7 @@ export const PlanosTokensPage: React.FC = () => {
               </li>
             </ul>
           </div>
-          <Button variant="outline" className="w-full text-xs border-slate-300" disabled>
+          <Button variant="outline" className="w-full text-xs" disabled>
             Plano Estrutural (Sem Cobrança)
           </Button>
         </div>

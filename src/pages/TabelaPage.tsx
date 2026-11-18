@@ -94,7 +94,7 @@ export const TabelaPage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
         <div>
-          <span className="text-xs uppercase font-bold tracking-widest text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200">
+          <span className="text-xs uppercase font-bold tracking-widest text-[#8B6FB8] bg-[#F4EFF9] px-2 py-0.5 rounded border border-[#E3D9EE]">
             Ferramenta Visual
           </span>
           <h1 className="text-2xl font-serif font-bold text-slate-900 mt-1">Tabela</h1>
@@ -107,7 +107,7 @@ export const TabelaPage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <Button
             onClick={handleSalvarAcervo}
-            className="bg-slate-900 hover:bg-slate-800 text-white text-xs flex items-center gap-1.5"
+            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Salvar no Meu Acervo</span>
@@ -116,26 +116,26 @@ export const TabelaPage: React.FC = () => {
           <Button
             onClick={handleExportDocx}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-blue-700" />
+            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Exportar DOCX</span>
           </Button>
 
           <Button
             onClick={() => exportToPdf(titulo, 'preview-tabela-box')}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-slate-700" />
+            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Imprimir / PDF</span>
           </Button>
         </div>
       </div>
 
       {mensagemSucesso && (
-        <div className="flex items-center gap-2 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-emerald-600" />
+        <div className="flex items-center gap-2 p-3 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
+          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
           <span>{mensagemSucesso}</span>
         </div>
       )}
@@ -205,7 +205,7 @@ export const TabelaPage: React.FC = () => {
 
               <Button
                 onClick={adicionarLinha}
-                className="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs mt-1"
+                className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs mt-1"
               >
                 <Plus className="w-3.5 h-3.5 mr-1" />
                 Inserir na Tabela
@@ -242,7 +242,7 @@ export const TabelaPage: React.FC = () => {
             <div className="overflow-x-auto">
               <table className="w-full text-xs border-collapse">
                 <thead>
-                  <tr className="bg-slate-900 text-white text-left font-serif">
+                  <tr className="bg-[#3E3359] text-white text-left font-serif">
                     <th className="p-2.5 rounded-tl-lg font-semibold">Item / Pedido</th>
                     <th className="p-2.5 font-semibold">Fundamento Legal / Tese</th>
                     <th className="p-2.5 font-semibold">Valor</th>
@@ -259,7 +259,7 @@ export const TabelaPage: React.FC = () => {
                         {l.valor}
                       </td>
                       <td className="p-2.5">
-                        <span className="text-[10px] font-bold uppercase tracking-wider bg-slate-200/80 text-slate-700 px-1.5 py-0.5 rounded">
+                        <span className="text-[10px] font-bold uppercase tracking-wider bg-[#F4EFF9] text-[#5D4E86] px-1.5 py-0.5 rounded">
                           {l.status}
                         </span>
                       </td>

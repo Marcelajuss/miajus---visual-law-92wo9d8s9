@@ -18,103 +18,105 @@
 
 @layer base {
   :root {
-    /* Change the colors to match the design system */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Paleta oficial MiaJus - Visual Law (identidade lilás/rosa, tom leve):
+       lilás contorno #A88FBF, lilás ação #9B7EBD, rosa apoio #EC4899,
+       quase-preto #1A1523 para textos e fundos claros com leve toque lilás. */
+    --background: 270 40% 99%;
+    --foreground: 261 15% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 261 15% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 261 15% 11%;
 
-    --primary: 222.2 84% 4.9%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 268 32% 62%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 98%;
-    --secondary-foreground: 222.2 84% 4.9%;
+    --secondary: 270 35% 96%;
+    --secondary-foreground: 261 15% 11%;
 
-    --muted: 210 40% 98%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 270 25% 96%;
+    --muted-foreground: 262 10% 40%;
 
-    --accent: 210 40% 98%;
-    --accent-foreground: 222.2 84% 4.9%;
+    --accent: 270 35% 96%;
+    --accent-foreground: 261 15% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 271 22% 90%;
+    --input: 271 22% 90%;
+    --ring: 268 32% 62%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
-    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-foreground: 261 15% 11%;
 
-    --sidebar-primary: 222.2 84% 4.9%;
+    --sidebar-primary: 268 32% 62%;
 
     --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 210 40% 98%;
+    --sidebar-accent: 270 35% 96%;
 
-    --sidebar-accent-foreground: 222.2 84% 4.9%;
+    --sidebar-accent-foreground: 261 15% 11%;
 
-    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-border: 271 22% 90%;
 
-    --sidebar-ring: 222.2 84% 4.9%;
+    --sidebar-ring: 268 32% 62%;
 
-    --chart-1: 34 100% 44%;
-    --chart-2: 189 100% 38%;
-    --chart-3: 209 100% 32%;
-    --chart-4: 42 100% 50%;
-    --chart-5: 33 100% 50%;
+    --chart-1: 268 32% 62%;
+    --chart-2: 330 81% 60%;
+    --chart-3: 271 27% 65%;
+    --chart-4: 340 82% 76%;
+    --chart-5: 263 34% 58%;
   }
 
   .dark {
-    /* Change the colors to match the design system consistent with the dark mode */
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Modo escuro coerente com a paleta lilás/rosa (não usado pelas telas atuais). */
+    --background: 262 25% 8%;
+    --foreground: 270 35% 96%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 262 25% 10%;
+    --card-foreground: 270 35% 96%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 262 25% 10%;
+    --popover-foreground: 270 35% 96%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 84% 4.9%;
+    --primary: 271 27% 65%;
+    --primary-foreground: 262 25% 8%;
 
-    --secondary: 222.2 84% 4.9%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 262 20% 16%;
+    --secondary-foreground: 270 35% 96%;
 
-    --muted: 222.2 84% 4.9%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 262 20% 16%;
+    --muted-foreground: 270 15% 70%;
 
-    --accent: 222.2 84% 4.9%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 262 20% 16%;
+    --accent-foreground: 270 35% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 222.2 84% 4.9%;
-    --input: 222.2 84% 4.9%;
-    --ring: 214.3 31.8% 91.4%;
-    --sidebar-background: 222.2 84% 4.9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 222.2 84% 4.9%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 222.2 84% 4.9%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 222.2 84% 4.9%;
-    --sidebar-ring: 222.2 84% 4.9%;
+    --border: 262 18% 22%;
+    --input: 262 18% 22%;
+    --ring: 271 27% 65%;
+    --sidebar-background: 262 25% 8%;
+    --sidebar-foreground: 270 35% 96%;
+    --sidebar-primary: 271 27% 65%;
+    --sidebar-primary-foreground: 262 25% 8%;
+    --sidebar-accent: 262 20% 16%;
+    --sidebar-accent-foreground: 270 35% 96%;
+    --sidebar-border: 262 18% 22%;
+    --sidebar-ring: 271 27% 65%;
 
-    --chart-1: 270 100% 44%;
-    --chart-2: 164 100% 38%;
-    --chart-3: 43 100% 32%;
-    --chart-4: 340 100% 50%;
-    --chart-5: 10 100% 50%;
+    --chart-1: 271 27% 65%;
+    --chart-2: 330 81% 60%;
+    --chart-3: 268 32% 62%;
+    --chart-4: 340 82% 76%;
+    --chart-5: 263 34% 58%;
   }
 
   /* NEVER REMOVE THIS */
@@ -295,5 +297,34 @@
 
   .animate-spotlight {
     animation: spotlight 2s ease forwards;
+  }
+
+  /* ===== Identidade visual MiaJus - lilás/rosa ===== */
+
+  /* Degradê oficial do botão primário: lilás → rosa (foto de referência) */
+  .bg-grad-primario {
+    background-image: linear-gradient(90deg, #9b7ebd 0%, #ec4899 100%);
+  }
+  .bg-grad-primario-hover:hover {
+    background-image: linear-gradient(90deg, #8b6fb8 0%, #db2777 100%);
+  }
+
+  /* Degradê da caixa grande/hero: lilás em degradê (escuro o suficiente
+     para manter texto branco legível) */
+  .bg-grad-hero {
+    background-image: linear-gradient(135deg, #3e3359 0%, #5d4e86 55%, #8b6fb8 100%);
+  }
+
+  /* Painel/hero claro: fundo quase branco com leve degradê lilás → rosa */
+  .bg-grad-hero-claro {
+    background-image: linear-gradient(135deg, #f4eff9 0%, #fdf2f8 100%);
+  }
+
+  /* Título com degradê lilás → rosa (apenas em fundos claros) */
+  .text-grad-marca {
+    background-image: linear-gradient(90deg, #8b6fb8 0%, #ec4899 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

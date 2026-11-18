@@ -62,8 +62,8 @@ export const FormatacaoInteligente: React.FC = () => {
   )
 
   // Configurações visuais (Visual Law)
-  const [corPrimaria, setCorPrimaria] = useState('#1E3A8A') // Azul Marinho Jurídico
-  const [corSecundaria, setCorSecundaria] = useState('#F1F5F9') // Fundo do quadro
+  const [corPrimaria, setCorPrimaria] = useState('#8B6FB8') // Lilás Jurídico (paleta MiaJus)
+  const [corSecundaria, setCorSecundaria] = useState('#F4EFF9') // Fundo do quadro
   const [estiloFonte, setEstiloFonte] = useState<'sans' | 'serif'>('sans')
   const [mostrarCabecalho, setMostrarCabecalho] = useState(true)
   const [mostrarQuadroResumo, setMostrarQuadroResumo] = useState(true)
@@ -155,7 +155,7 @@ export const FormatacaoInteligente: React.FC = () => {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-xs uppercase font-bold tracking-widest text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+            <span className="text-xs uppercase font-bold tracking-widest text-[#8B6FB8] bg-[#F4EFF9] px-2 py-0.5 rounded border border-[#E3D9EE]">
               Visual Law Studio
             </span>
             <span className="text-xs text-slate-500">
@@ -175,7 +175,7 @@ export const FormatacaoInteligente: React.FC = () => {
           <Button
             onClick={handleSalvarAcervo}
             disabled={salvando}
-            className="bg-slate-900 hover:bg-slate-800 text-white text-xs flex items-center gap-1.5 shadow-sm"
+            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5 shadow-sm"
           >
             <Save className="w-3.5 h-3.5" />
             <span>{salvando ? 'Salvando...' : 'Salvar no Meu Acervo'}</span>
@@ -184,18 +184,18 @@ export const FormatacaoInteligente: React.FC = () => {
           <Button
             onClick={handleExportDocx}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-blue-700" />
+            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Baixar DOCX</span>
           </Button>
 
           <Button
             onClick={handleExportPdf}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Printer className="w-3.5 h-3.5 text-slate-700" />
+            <Printer className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Imprimir / Salvar PDF</span>
           </Button>
         </div>
@@ -363,7 +363,7 @@ export const FormatacaoInteligente: React.FC = () => {
                 onClick={() => adicionarElementoVisual('Linha do Tempo')}
                 className="text-[11px] justify-start h-8 px-2"
               >
-                <Workflow className="w-3.5 h-3.5 mr-1.5 text-blue-600" />+ Linha do Tempo
+                <Workflow className="w-3.5 h-3.5 mr-1.5 text-[#8B6FB8]" />+ Linha do Tempo
               </Button>
               <Button
                 type="button"

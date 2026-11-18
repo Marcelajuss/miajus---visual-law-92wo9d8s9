@@ -26,7 +26,7 @@ export const BlocoNotasPage: React.FC = () => {
   const [titulo, setTitulo] = useState('')
   const [texto, setTexto] = useState('')
   const [assunto, setAssunto] = useState('Geral')
-  const [cor, setCor] = useState('#EFF6FF')
+  const [cor, setCor] = useState('#F4EFF9')
   const [mensagem, setMensagem] = useState<string | null>(null)
 
   const carregarNotas = () => {
@@ -46,7 +46,7 @@ export const BlocoNotasPage: React.FC = () => {
     setTitulo(n.titulo)
     setTexto(n.texto)
     setAssunto(n.assunto)
-    setCor(n.cor || '#EFF6FF')
+    setCor(n.cor || '#F4EFF9')
   }
 
   const handleCriarNova = () => {
@@ -101,10 +101,10 @@ export const BlocoNotasPage: React.FC = () => {
   })
 
   const CORES_PALETA = [
-    { label: 'Azul Claro', hex: '#EFF6FF' },
-    { label: 'Amarelo Suave', hex: '#FEF3C7' },
-    { label: 'Verde Menta', hex: '#ECFDF5' },
+    { label: 'Lilás Claro', hex: '#F4EFF9' },
+    { label: 'Lilás Suave', hex: '#EFE6F7' },
     { label: 'Rosa Claro', hex: '#FDF2F8' },
+    { label: 'Rosa Suave', hex: '#FBEAF3' },
     { label: 'Cinza Neutro', hex: '#F1F5F9' },
   ]
 
@@ -125,7 +125,7 @@ export const BlocoNotasPage: React.FC = () => {
 
         <Button
           onClick={handleCriarNova}
-          className="bg-slate-900 hover:bg-slate-800 text-white text-xs flex items-center gap-1.5 shadow-sm"
+          className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5 shadow-sm"
         >
           <Plus className="w-3.5 h-3.5" />
           <span>Nova Nota</span>
@@ -133,8 +133,8 @@ export const BlocoNotasPage: React.FC = () => {
       </div>
 
       {mensagem && (
-        <div className="flex items-center gap-2 p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-emerald-600" />
+        <div className="flex items-center gap-2 p-2.5 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
+          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
           <span>{mensagem}</span>
         </div>
       )}
@@ -166,8 +166,8 @@ export const BlocoNotasPage: React.FC = () => {
                     onClick={() => selecionarNota(n)}
                     className={`p-3.5 rounded-xl border transition-all cursor-pointer select-none space-y-1 ${
                       ativo
-                        ? 'border-slate-800 shadow-sm ring-1 ring-slate-800'
-                        : 'border-slate-200 hover:border-slate-300'
+                        ? 'border-[#8B6FB8] shadow-sm ring-1 ring-[#8B6FB8]'
+                        : 'border-slate-200 hover:border-[#A88FBF]'
                     }`}
                     style={{ backgroundColor: n.cor || '#FFFFFF' }}
                   >
@@ -205,7 +205,7 @@ export const BlocoNotasPage: React.FC = () => {
                           setTimeout(handleSalvarAtual, 50)
                         }}
                         className={`w-5 h-5 rounded-full border transition-transform ${
-                          cor === c.hex ? 'ring-2 ring-slate-800 scale-110' : 'border-slate-300'
+                          cor === c.hex ? 'ring-2 ring-[#8B6FB8] scale-110' : 'border-slate-300'
                         }`}
                         style={{ backgroundColor: c.hex }}
                         title={c.label}
@@ -219,7 +219,7 @@ export const BlocoNotasPage: React.FC = () => {
                   <Button
                     onClick={handleSalvarAtual}
                     size="sm"
-                    className="bg-slate-900 hover:bg-slate-800 text-white text-xs h-7 px-3"
+                    className="bg-grad-primario bg-grad-primario-hover text-white text-xs h-7 px-3"
                   >
                     Salvar
                   </Button>
@@ -259,7 +259,7 @@ export const BlocoNotasPage: React.FC = () => {
                   value={texto}
                   onChange={(e) => setTexto(e.target.value)}
                   rows={12}
-                  className="w-full text-xs rounded-xl border border-slate-200 p-3 mt-1 text-slate-800 leading-relaxed focus:outline-none focus:ring-1 focus:ring-slate-400"
+                  className="w-full text-xs rounded-xl border border-slate-200 p-3 mt-1 text-slate-800 leading-relaxed focus:outline-none focus:ring-1 focus:ring-[#8B6FB8]"
                   style={{ backgroundColor: cor }}
                 />
               </div>

@@ -46,7 +46,7 @@ export const CentralFerramentas: React.FC = () => {
 
       {/* Cartão horizontal destacado: Gerador de Documentos com IA com a Mia (Critério 1) */}
       {destaqueTool && (
-        <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-gradient-to-r from-slate-900 via-slate-800 to-blue-950 text-white p-6 sm:p-8 shadow-sm">
+        <div className="relative overflow-hidden rounded-2xl border border-[#E3D9EE] bg-grad-hero text-white p-6 sm:p-8 shadow-sm">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 relative z-10">
             {/* Personagem Mia em destaque */}
             <div className="flex flex-col items-center flex-shrink-0">
@@ -58,10 +58,10 @@ export const CentralFerramentas: React.FC = () => {
 
             <div className="flex-1 text-center sm:text-left space-y-3">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-400/20 text-amber-300 border border-amber-300/30">
+                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-white/15 text-white border border-white/30">
                   Fluxo Prioritário
                 </span>
-                <span className="text-xs text-slate-300">
+                <span className="text-xs text-white/80">
                   Gerador de Documentos com IA &rarr; Formatação Inteligente &rarr; Meu Acervo
                 </span>
               </div>
@@ -70,7 +70,7 @@ export const CentralFerramentas: React.FC = () => {
                 {destaqueTool.nome}
               </h2>
 
-              <p className="text-sm text-slate-300 leading-relaxed max-w-3xl">
+              <p className="text-sm text-white/85 leading-relaxed max-w-3xl">
                 Crie petições, contratos e recursos já estruturados nos preceitos do Visual Law. No
                 momento, o fluxo funciona no <strong>modo manual guiado</strong> na Formatação
                 Inteligente. A geração automática por IA será habilitada assim que a chave do modelo
@@ -80,15 +80,15 @@ export const CentralFerramentas: React.FC = () => {
               <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-3">
                 <Button
                   onClick={() => navigate('/formatacao-inteligente?modo=novo')}
-                  className="bg-white text-slate-900 hover:bg-slate-100 font-semibold text-xs px-4 py-2 rounded-lg shadow"
+                  className="bg-white text-[#1A1523] hover:bg-[#F4EFF9] font-semibold text-xs px-4 py-2 rounded-full shadow"
                 >
-                  <Sparkles className="w-4 h-4 mr-2 text-amber-600" />
+                  <Sparkles className="w-4 h-4 mr-2 text-[#8B6FB8]" />
                   Iniciar Peça na Formatação Inteligente
                 </Button>
                 <Button
                   variant="outline"
                   onClick={() => setSelectedIaTool(destaqueTool)}
-                  className="bg-transparent text-slate-200 border-slate-600 hover:bg-white/10 text-xs px-3 py-2 rounded-lg"
+                  className="bg-transparent text-white border-[#A88FBF] hover:bg-white/10 text-xs px-3 py-2 rounded-full"
                 >
                   Status da Conexão IA
                 </Button>
@@ -116,18 +116,18 @@ export const CentralFerramentas: React.FC = () => {
               <div
                 key={tool.id}
                 onClick={() => handleCardClick(tool)}
-                className="group relative flex flex-col justify-between p-5 rounded-xl border border-slate-200/90 bg-white hover:border-slate-300 hover:shadow-sm transition-all cursor-pointer select-none"
+                className="group relative flex flex-col justify-between p-5 rounded-xl border border-[#E3D9EE] bg-white hover:border-[#A88FBF] hover:shadow-sm transition-all cursor-pointer select-none"
               >
                 <div>
                   <div className="flex items-start justify-between gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-700 group-hover:bg-slate-900 group-hover:text-white transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-[#F4EFF9] border border-[#E3D9EE] flex items-center justify-center text-[#5D4E86] group-hover:bg-[#8B6FB8] group-hover:text-white transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
 
                     <div className="flex items-center gap-1.5">
                       {/* Selo IA: conforme item (2), o selo "IA" só aparece se iaImplementada === true */}
                       {tool.iaImplementada ? (
-                        <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-100 border-purple-200 text-[10px] uppercase font-bold tracking-wider">
+                        <Badge className="bg-[#F4EFF9] text-[#5D4E86] hover:bg-[#F4EFF9] border-[#A88FBF]/50 text-[10px] uppercase font-bold tracking-wider">
                           IA Ativa
                         </Badge>
                       ) : tool.exigeIa ? (
@@ -141,7 +141,7 @@ export const CentralFerramentas: React.FC = () => {
                     </div>
                   </div>
 
-                  <h4 className="text-base font-serif font-bold text-slate-900 group-hover:text-slate-950 transition-colors">
+                  <h4 className="text-base font-serif font-bold text-[#1A1523] group-hover:text-[#3E3359] transition-colors">
                     {tool.nome}
                   </h4>
 
@@ -150,7 +150,7 @@ export const CentralFerramentas: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 group-hover:text-slate-900">
+                <div className="mt-4 pt-3 border-t border-[#F4EFF9] flex items-center justify-between text-xs font-semibold text-[#5D4E86] group-hover:text-[#3E3359]">
                   <span>
                     {tool.exigeIa && !tool.iaImplementada
                       ? 'Ver Detalhes do Recurso'

@@ -174,7 +174,7 @@ export const GeradorQrCodePage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <Button
             onClick={handleSalvarAcervo}
-            className="bg-slate-900 hover:bg-slate-800 text-white text-xs flex items-center gap-1.5"
+            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Salvar no Meu Acervo</span>
@@ -183,26 +183,26 @@ export const GeradorQrCodePage: React.FC = () => {
           <Button
             onClick={handleDownloadPng}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-blue-700" />
+            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Baixar PNG</span>
           </Button>
 
           <Button
             onClick={handleDownloadSvg}
             variant="outline"
-            className="text-xs flex items-center gap-1.5 border-slate-300"
+            className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-slate-700" />
+            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
             <span>Baixar SVG</span>
           </Button>
         </div>
       </div>
 
       {mensagemSucesso && (
-        <div className="flex items-center gap-2 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-emerald-600" />
+        <div className="flex items-center gap-2 p-3 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
+          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
           <span>{mensagemSucesso}</span>
         </div>
       )}
@@ -277,7 +277,7 @@ export const GeradorQrCodePage: React.FC = () => {
                 step="20"
                 value={tamanho}
                 onChange={(e) => setTamanho(Number(e.target.value))}
-                className="w-full mt-1.5 accent-slate-900 cursor-pointer"
+                className="w-full mt-1.5 accent-[#8B6FB8] cursor-pointer"
               />
             </div>
           </div>
@@ -337,7 +337,7 @@ export const GeradorQrCodePage: React.FC = () => {
             <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
               <Button
                 onClick={handleDownloadPng}
-                className="text-xs bg-slate-900 text-white hover:bg-slate-800"
+                className="text-xs bg-grad-primario bg-grad-primario-hover text-white"
               >
                 <Download className="w-3.5 h-3.5 mr-1.5" />
                 Baixar Imagem PNG
@@ -345,7 +345,7 @@ export const GeradorQrCodePage: React.FC = () => {
               <Button
                 onClick={handleDownloadSvg}
                 variant="outline"
-                className="text-xs border-slate-300 text-blue-700"
+                className="text-xs text-[#5D4E86]"
               >
                 <Download className="w-3.5 h-3.5 mr-1.5" />
                 Baixar Vetor SVG

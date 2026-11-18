@@ -58,7 +58,7 @@ const App = () => (
                 exemploEntrada="Petição inicial com excesso de texto contínuo sem respiro visual e sem quadros de síntese fática."
                 exemploSaida={`[DIAGRAMAÇÃO VISUAL LAW RECOMENDADA]
 • Cabeçalho: Barra superior com identificação da sociedade de advogados e número OAB.
-• Quadro de Síntese: Caixa destacada em azul marinho (#1E3A8A) com os 3 fatos principais.
+• Quadro de Síntese: Caixa destacada em lilás (#8B6FB8) com os 3 fatos principais.
 • Cronologia: Linha do tempo vertical demonstrando a tempestividade do ajuizamento.`}
               />
             }

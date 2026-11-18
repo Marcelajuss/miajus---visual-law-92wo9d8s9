@@ -42,7 +42,7 @@ export const NavigationHeader: React.FC = () => {
   ]
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-[#E3D9EE]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-4">
           {/* Logotipo tipográfico oficial sem símbolos */}
@@ -61,8 +61,8 @@ export const NavigationHeader: React.FC = () => {
                   to={item.rota}
                   className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg font-medium transition-colors ${
                     ativo
-                      ? 'bg-slate-900 text-white font-semibold shadow-sm'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                      ? 'bg-[#1A1523] text-white font-semibold shadow-sm'
+                      : 'text-slate-600 hover:text-[#1A1523] hover:bg-[#F4EFF9]'
                   }`}
                 >
                   <Icon className="w-3.5 h-3.5" />
@@ -76,16 +76,16 @@ export const NavigationHeader: React.FC = () => {
           <div className="flex items-center gap-2">
             <Link
               to="/planos"
-              className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 transition-colors"
+              className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-lg border border-[#A88FBF] bg-transparent text-[#1A1523] hover:bg-[#A88FBF]/10 transition-colors"
             >
-              <CreditCard className="w-3.5 h-3.5 text-slate-500" />
+              <CreditCard className="w-3.5 h-3.5 text-[#8B6FB8]" />
               <span>Planos e Tokens</span>
             </Link>
 
             <button
               type="button"
               onClick={() => setMenuAberto(!menuAberto)}
-              className="xl:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+              className="xl:hidden p-2 rounded-lg text-slate-600 hover:text-[#1A1523] hover:bg-[#F4EFF9]"
               aria-label="Abrir menu de navegação"
             >
               {menuAberto ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -112,7 +112,9 @@ export const NavigationHeader: React.FC = () => {
                   to={item.rota}
                   onClick={() => setMenuAberto(false)}
                   className={`flex items-center gap-2 px-3 py-2 rounded-lg font-medium ${
-                    ativo ? 'bg-slate-900 text-white font-bold' : 'text-slate-700 hover:bg-slate-50'
+                    ativo
+                      ? 'bg-[#1A1523] text-white font-bold'
+                      : 'text-slate-700 hover:bg-[#F4EFF9]'
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -159,9 +161,9 @@ export const MainFooter: React.FC = () => {
             </a>
             <a
               href="mailto:suporte@miajus.adv.br"
-              className="inline-flex items-center gap-1.5 hover:text-blue-700 transition-colors"
+              className="inline-flex items-center gap-1.5 hover:text-[#7A5FA8] transition-colors"
             >
-              <Mail className="w-3.5 h-3.5 text-blue-600" />
+              <Mail className="w-3.5 h-3.5 text-[#8B6FB8]" />
               <span>suporte@miajus.adv.br</span>
             </a>
           </div>

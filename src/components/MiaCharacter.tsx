@@ -192,7 +192,7 @@ export const MiaBubble: React.FC<{
   size?: 'sm' | 'md'
 }> = ({ title = 'Dica da Mia', message, actionLabel, onAction, variant = 'info', size = 'md' }) => {
   const borderColors = {
-    info: 'border-blue-200 bg-blue-50/70 text-blue-950',
+    info: 'border-[#E3D9EE] bg-[#F4EFF9]/80 text-[#3E3359]',
     warning: 'border-amber-200 bg-amber-50/80 text-amber-950',
     tip: 'border-slate-200 bg-slate-50 text-slate-800',
   }

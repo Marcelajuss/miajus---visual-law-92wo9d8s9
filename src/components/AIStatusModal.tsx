@@ -47,18 +47,18 @@ export const AIStatusModal: React.FC<AIStatusModalProps> = ({
           </DialogDescription>
         </DialogHeader>
 
-        <div className="rounded-xl border border-blue-100 bg-blue-50/70 p-4 text-xs text-slate-700 space-y-2.5">
-          <div className="flex items-center gap-2 font-semibold text-blue-950">
-            <Cpu className="w-4 h-4 text-blue-700" />
+        <div className="rounded-xl border border-[#E3D9EE] bg-[#F4EFF9]/80 p-4 text-xs text-slate-700 space-y-2.5">
+          <div className="flex items-center gap-2 font-semibold text-[#3E3359]">
+            <Cpu className="w-4 h-4 text-[#8B6FB8]" />
             <span>Status do Recurso: Ativação Pendente</span>
           </div>
           <p className="leading-relaxed">
             Esta funcionalidade está estruturada e será ativada automaticamente assim que um serviço
             de inteligência artificial for conectado à plataforma pelo administrador.
           </p>
-          <div className="pt-2 border-t border-blue-200/60 space-y-1.5">
-            <p className="font-semibold text-blue-900 flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-blue-700" />
+          <div className="pt-2 border-t border-[#E3D9EE] space-y-1.5">
+            <p className="font-semibold text-[#5D4E86] flex items-center gap-1.5">
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#8B6FB8]" />
               O que você já pode fazer agora no modo manual:
             </p>
             <ul className="list-disc list-inside text-slate-600 pl-1 space-y-0.5">
@@ -96,7 +96,7 @@ export const AIStatusModal: React.FC<AIStatusModalProps> = ({
           </Button>
           <Button
             type="button"
-            className="w-full sm:w-auto text-xs bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center gap-1.5"
+            className="w-full sm:w-auto text-xs bg-[#1A1523] hover:bg-[#2D2A32] text-white flex items-center justify-center gap-1.5"
             onClick={() => {
               onOpenChange(false)
               navigate(fallbackRoute)

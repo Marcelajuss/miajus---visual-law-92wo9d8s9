@@ -21,12 +21,12 @@ export function exportToDocx(title: string, htmlContent: string) {
     color: #1a1a1a;
     margin: 2cm;
   }
-  h1 { font-size: 16pt; color: #0f172a; margin-bottom: 8pt; border-bottom: 2pt solid #1e3a8a; padding-bottom: 4pt; }
-  h2 { font-size: 13pt; color: #1e3a8a; margin-top: 14pt; margin-bottom: 6pt; }
+  h1 { font-size: 16pt; color: #1A1523; margin-bottom: 8pt; border-bottom: 2pt solid #8B6FB8; padding-bottom: 4pt; }
+  h2 { font-size: 13pt; color: #5D4E86; margin-top: 14pt; margin-bottom: 6pt; }
   p { margin-bottom: 8pt; text-align: justify; }
   .box-destaque {
-    background-color: #f1f5f9;
-    border-left: 4pt solid #1e3a8a;
+    background-color: #F4EFF9;
+    border-left: 4pt solid #8B6FB8;
     padding: 10pt;
     margin: 10pt 0;
   }
@@ -118,8 +118,8 @@ export function exportToPdf(title: string, printableElementId: string) {
     th, td { border: 1px solid #cbd5e1; padding: 8px; }
     th { background: #f8fafc; }
     .box-destaque {
-      background: #f1f5f9;
-      border-left: 4px solid #1e3a8a;
+      background: #F4EFF9;
+      border-left: 4px solid #8B6FB8;
       padding: 12px;
       margin: 14px 0;
       border-radius: 4px;

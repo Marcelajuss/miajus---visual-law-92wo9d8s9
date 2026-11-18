@@ -52,7 +52,7 @@ export const PendingIaToolPage: React.FC<PendingIaPageProps> = ({
             <span className="text-xs uppercase font-bold tracking-widest text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
               Módulo Estruturado
             </span>
-            <span className="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 font-medium">
+            <span className="text-xs text-[#5D4E86] bg-[#F4EFF9] px-2 py-0.5 rounded border border-[#A88FBF]/40 font-medium">
               Aguardando Conexão de IA
             </span>
           </div>
@@ -63,17 +63,17 @@ export const PendingIaToolPage: React.FC<PendingIaPageProps> = ({
         <Button
           onClick={() => setModalAberto(true)}
           variant="outline"
-          className="text-xs flex items-center gap-1.5 border-slate-300"
+          className="text-xs flex items-center gap-1.5"
         >
-          <Cpu className="w-3.5 h-3.5 text-blue-700" />
+          <Cpu className="w-3.5 h-3.5 text-[#8B6FB8]" />
           <span>Status da Conexão</span>
         </Button>
       </div>
 
       {/* Caixa de aviso de ativação futura sem botões decorativos */}
-      <div className="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-xs text-blue-950 space-y-2">
-        <div className="flex items-center gap-2 font-bold text-blue-900">
-          <Cpu className="w-4 h-4 text-blue-700" />
+      <div className="p-4 rounded-xl bg-[#F4EFF9]/80 border border-[#E3D9EE] text-xs text-[#3E3359] space-y-2">
+        <div className="flex items-center gap-2 font-bold text-[#3E3359]">
+          <Cpu className="w-4 h-4 text-[#8B6FB8]" />
           <span>Recurso Estruturado no Plano v1</span>
         </div>
         <p className="leading-relaxed text-slate-700">
@@ -106,7 +106,7 @@ export const PendingIaToolPage: React.FC<PendingIaPageProps> = ({
             <span className="text-[11px] text-slate-400">Modo de Edição Manual</span>
             <Button
               onClick={() => navigate('/formatacao-inteligente')}
-              className="bg-slate-900 text-white text-xs hover:bg-slate-800 flex items-center gap-1.5"
+              className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
             >
               <span>Aplicar na Formatação Inteligente</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -124,7 +124,7 @@ export const PendingIaToolPage: React.FC<PendingIaPageProps> = ({
             {exemploSaida}
           </div>
 
-          <div className="p-3 rounded-lg bg-amber-50 border border-amber-200 text-[11px] text-amber-900">
+          <div className="p-3 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[11px] text-[#3E3359]">
             <strong>Orientações de Plain English:</strong> Substitua expressões prolixas ("ad
             instar", "data venia", "in continenti") por linguagem direta, facilitando a decisão do
             juiz e a compreensão da parte.

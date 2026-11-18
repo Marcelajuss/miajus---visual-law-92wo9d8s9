@@ -42,11 +42,11 @@ export const AgendaPage: React.FC = () => {
     if (!titulo.trim() || !data.trim()) return
 
     const corMap = {
-      'Prazo Fatal': '#EF4444',
-      Audiência: '#3B82F6',
-      Reunião: '#10B981',
-      Diligência: '#F59E0B',
-      Protocolo: '#8B5CF6',
+      'Prazo Fatal': '#EC4899',
+      Audiência: '#8B6FB8',
+      Reunião: '#A88FBF',
+      Diligência: '#C9A8E0',
+      Protocolo: '#5D4E86',
     }
 
     salvarCompromisso({
@@ -127,8 +127,8 @@ export const AgendaPage: React.FC = () => {
       </div>
 
       {mensagem && (
-        <div className="flex items-center gap-2 p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-emerald-600" />
+        <div className="flex items-center gap-2 p-2.5 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
+          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
           <span>{mensagem}</span>
         </div>
       )}
@@ -179,11 +179,11 @@ export const AgendaPage: React.FC = () => {
                 onChange={(e) => setCategoria(e.target.value as any)}
                 className="w-full text-xs rounded-md border border-slate-200 p-2 mt-1 bg-white"
               >
-                <option value="Prazo Fatal">Prazo Fatal (Vermelho)</option>
-                <option value="Audiência">Audiência (Azul)</option>
-                <option value="Reunião">Reunião (Verde)</option>
-                <option value="Diligência">Diligência (Âmbar)</option>
-                <option value="Protocolo">Protocolo (Roxo)</option>
+                <option value="Prazo Fatal">Prazo Fatal (Rosa)</option>
+                <option value="Audiência">Audiência (Lilás)</option>
+                <option value="Reunião">Reunião (Lilás Claro)</option>
+                <option value="Diligência">Diligência (Lilás Suave)</option>
+                <option value="Protocolo">Protocolo (Lilás Escuro)</option>
               </select>
             </div>
 
@@ -209,7 +209,7 @@ export const AgendaPage: React.FC = () => {
 
             <Button
               onClick={handleAdicionar}
-              className="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs mt-1"
+              className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs mt-1"
             >
               <Plus className="w-3.5 h-3.5 mr-1" />
               Adicionar à Agenda
