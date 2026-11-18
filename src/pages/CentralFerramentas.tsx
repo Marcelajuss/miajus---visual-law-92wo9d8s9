@@ -50,7 +50,7 @@ export const CentralFerramentas: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 relative z-10">
             {/* Personagem Mia em destaque */}
             <div className="flex flex-col items-center flex-shrink-0">
-              <MiaCharacter size="lg" expression="happy" className="bg-white/10 rounded-2xl p-1" />
+              <MiaCharacter size="xl" className="rounded-2xl border border-[#A88FBF]" />
               <span className="text-[11px] font-semibold text-[#1A1523] mt-1.5 tracking-wider uppercase">
                 Mia • Assistente
               </span>
@@ -82,7 +82,7 @@ export const CentralFerramentas: React.FC = () => {
                   onClick={() => navigate('/formatacao-inteligente?modo=novo')}
                   className="bg-white text-[#1A1523] hover:bg-[#F4EFF9] font-semibold text-xs px-4 py-2 rounded-full shadow"
                 >
-                  <Sparkles className="w-4 h-4 mr-2 text-[#8B6FB8]" />
+                  <Sparkles className="w-4 h-4 mr-2 text-[#A78BDB]" />
                   Iniciar Peça na Formatação Inteligente
                 </Button>
                 <Button
@@ -120,7 +120,7 @@ export const CentralFerramentas: React.FC = () => {
               >
                 <div>
                   <div className="flex items-start justify-between gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-[#F4EFF9] border border-[#E3D9EE] flex items-center justify-center text-[#5D4E86] group-hover:bg-[#8B6FB8] group-hover:text-white transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-[#F4EFF9] border border-[#E3D9EE] flex items-center justify-center text-[#5D4E86] group-hover:bg-[#A78BDB] group-hover:text-[#1A1523] transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { MiaCharacter } from '@/components/MiaCharacter'
 
 interface MiaJusLogoProps {
   className?: string
@@ -8,8 +9,7 @@ interface MiaJusLogoProps {
 }
 
 /**
- * Logotipo exclusivamente tipográfico "MiaJus - Visual Law", sem símbolos,
- * com identidade própria clara, minimalista e jurídica.
+ * Logotipo "MiaJus" (nome colado) com a avatar da Mia ao lado e o subtítulo "Visual Law".
  */
 export const MiaJusLogo: React.FC<MiaJusLogoProps> = ({
   className = '',
@@ -28,21 +28,24 @@ export const MiaJusLogo: React.FC<MiaJusLogoProps> = ({
     lg: 'text-[13px] tracking-widest',
   }
 
+  const avatarSize = size === 'lg' ? 'md' : 'sm'
+
   const content = (
-    <div className={`inline-flex flex-col select-none leading-none ${className}`}>
-      <div className={`font-bold text-slate-900 ${sizeClasses[size]} flex items-baseline gap-1`}>
-        <span className="font-semibold tracking-normal text-slate-900">Mia</span>
-        <span className="font-bold text-slate-800">Jus</span>
-        <span className="font-light text-slate-400 mx-1">—</span>
-        <span className="font-sans font-medium text-slate-600 uppercase text-[0.72em] tracking-wider">
-          Visual Law
+    <div className={`inline-flex items-center gap-2.5 select-none leading-none ${className}`}>
+      <MiaCharacter size={avatarSize} className="rounded-full" />
+      <div className="inline-flex flex-col leading-none">
+        <div className={`font-bold text-slate-900 ${sizeClasses[size]} flex items-baseline gap-2`}>
+          <span className="font-bold tracking-tight text-slate-900">MiaJus</span>
+          <span className="font-sans font-medium text-slate-600 uppercase text-[0.72em] tracking-wider">
+            Visual Law
+          </span>
+        </div>
+        <span
+          className={`font-sans uppercase text-slate-400 font-semibold mt-1 ${subtitleClasses[size]}`}
+        >
+          Plataforma Jurídica Estruturada
         </span>
       </div>
-      <span
-        className={`font-sans uppercase text-slate-400 font-semibold mt-1 ${subtitleClasses[size]}`}
-      >
-        Plataforma Jurídica Estruturada
-      </span>
     </div>
   )
 
