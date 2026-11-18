@@ -186,7 +186,7 @@ export const FormatacaoInteligente: React.FC = () => {
             variant="outline"
             className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
+            <Download className="w-3.5 h-3.5 text-[#EC4899]" />
             <span>Baixar DOCX</span>
           </Button>
 
@@ -195,7 +195,7 @@ export const FormatacaoInteligente: React.FC = () => {
             variant="outline"
             className="text-xs flex items-center gap-1.5"
           >
-            <Printer className="w-3.5 h-3.5 text-[#8B6FB8]" />
+            <Printer className="w-3.5 h-3.5 text-[#EC4899]" />
             <span>Imprimir / Salvar PDF</span>
           </Button>
         </div>
@@ -363,7 +363,7 @@ export const FormatacaoInteligente: React.FC = () => {
                 onClick={() => adicionarElementoVisual('Linha do Tempo')}
                 className="text-[11px] justify-start h-8 px-2"
               >
-                <Workflow className="w-3.5 h-3.5 mr-1.5 text-[#8B6FB8]" />+ Linha do Tempo
+                <Workflow className="w-3.5 h-3.5 mr-1.5 text-[#EC4899]" />+ Linha do Tempo
               </Button>
               <Button
                 type="button"
@@ -372,7 +372,7 @@ export const FormatacaoInteligente: React.FC = () => {
                 onClick={() => adicionarElementoVisual('Fluxograma')}
                 className="text-[11px] justify-start h-8 px-2"
               >
-                <Columns className="w-3.5 h-3.5 mr-1.5 text-[#8B6FB8]" />+ Fluxograma
+                <Columns className="w-3.5 h-3.5 mr-1.5 text-[#EC4899]" />+ Fluxograma
               </Button>
               <Button
                 type="button"
@@ -390,7 +390,7 @@ export const FormatacaoInteligente: React.FC = () => {
                 onClick={() => adicionarElementoVisual('Gráfico')}
                 className="text-[11px] justify-start h-8 px-2"
               >
-                <BarChart2 className="w-3.5 h-3.5 mr-1.5 text-[#5D4E86]" />+ Gráfico Estatístico
+                <BarChart2 className="w-3.5 h-3.5 mr-1.5 text-[#EC4899]" />+ Gráfico Estatístico
               </Button>
             </div>
 

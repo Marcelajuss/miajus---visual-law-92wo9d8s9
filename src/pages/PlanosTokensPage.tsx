@@ -29,7 +29,7 @@ export const PlanosTokensPage: React.FC = () => {
         <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Saldo Atual de Tokens</span>
-            <Coins className="w-4 h-4 text-[#8B6FB8]" />
+            <Coins className="w-4 h-4 text-[#EC4899]" />
           </div>
           <p className="text-2xl font-serif font-bold text-slate-900">50.000</p>
           <p className="text-[11px] text-slate-500">Cota inicial de avaliação da v1</p>
@@ -47,7 +47,7 @@ export const PlanosTokensPage: React.FC = () => {
         <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Status da Conta</span>
-            <ShieldCheck className="w-4 h-4 text-[#8B6FB8]" />
+            <ShieldCheck className="w-4 h-4 text-[#EC4899]" />
           </div>
           <p className="text-2xl font-serif font-bold text-[#5D4E86]">Ativa (v1)</p>
           <p className="text-[11px] text-slate-500">
@@ -68,15 +68,15 @@ export const PlanosTokensPage: React.FC = () => {
             </p>
             <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
+                <Check className="w-3.5 h-3.5 text-[#EC4899]" />
                 Formatação Inteligente Visual Law
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
+                <Check className="w-3.5 h-3.5 text-[#EC4899]" />
                 Fluxogramas e Linhas do Tempo ilimitados
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
+                <Check className="w-3.5 h-3.5 text-[#EC4899]" />
                 Exportação em DOCX e PDF
               </li>
             </ul>
@@ -134,15 +134,15 @@ export const PlanosTokensPage: React.FC = () => {
             </p>
             <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
+                <Check className="w-3.5 h-3.5 text-[#EC4899]" />
                 Multi-usuários para o escritório
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
+                <Check className="w-3.5 h-3.5 text-[#EC4899]" />
                 Identidade visual institucional exclusiva
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
+                <Check className="w-3.5 h-3.5 text-[#EC4899]" />
                 Biblioteca compartilhada de modelos
               </li>
             </ul>

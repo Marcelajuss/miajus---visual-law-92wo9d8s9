@@ -49,7 +49,7 @@ export const AIStatusModal: React.FC<AIStatusModalProps> = ({
 
         <div className="rounded-xl border border-[#E3D9EE] bg-[#F4EFF9]/80 p-4 text-xs text-slate-700 space-y-2.5">
           <div className="flex items-center gap-2 font-semibold text-[#3E3359]">
-            <Cpu className="w-4 h-4 text-[#8B6FB8]" />
+            <Cpu className="w-4 h-4 text-[#EC4899]" />
             <span>Status do Recurso: Ativação Pendente</span>
           </div>
           <p className="leading-relaxed">
@@ -58,7 +58,7 @@ export const AIStatusModal: React.FC<AIStatusModalProps> = ({
           </p>
           <div className="pt-2 border-t border-[#E3D9EE] space-y-1.5">
             <p className="font-semibold text-[#5D4E86] flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#8B6FB8]" />
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#EC4899]" />
               O que você já pode fazer agora no modo manual:
             </p>
             <ul className="list-disc list-inside text-slate-600 pl-1 space-y-0.5">

@@ -131,7 +131,7 @@ export const BlocoNotasPage: React.FC = () => {
 
       {mensagem && (
         <div className="flex items-center gap-2 p-2.5 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
+          <CheckCircle className="w-4 h-4 text-[#EC4899]" />
           <span>{mensagem}</span>
         </div>
       )}

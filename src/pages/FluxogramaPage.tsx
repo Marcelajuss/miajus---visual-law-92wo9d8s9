@@ -164,7 +164,7 @@ export const FluxogramaPage: React.FC = () => {
             variant="outline"
             className="text-xs flex items-center gap-1.5"
           >
-            <Download className="w-3.5 h-3.5 text-[#8B6FB8]" />
+            <Download className="w-3.5 h-3.5 text-[#EC4899]" />
             <span>Exportar SVG</span>
           </Button>
 
@@ -173,7 +173,7 @@ export const FluxogramaPage: React.FC = () => {
             variant="outline"
             className="text-xs flex items-center gap-1.5"
           >
-            <FileCode className="w-3.5 h-3.5 text-[#8B6FB8]" />
+            <FileCode className="w-3.5 h-3.5 text-[#EC4899]" />
             <span>Imprimir / PDF</span>
           </Button>
         </div>
@@ -181,7 +181,7 @@ export const FluxogramaPage: React.FC = () => {
 
       {mensagemSucesso && (
         <div className="flex items-center gap-2 p-3 rounded-lg bg-[#F4EFF9] border border-[#A88FBF]/40 text-[#3E3359] text-xs font-medium animate-fade-in">
-          <CheckCircle className="w-4 h-4 text-[#8B6FB8]" />
+          <CheckCircle className="w-4 h-4 text-[#EC4899]" />
           <span>{mensagemSucesso}</span>
         </div>
       )}
