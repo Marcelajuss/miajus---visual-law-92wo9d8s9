@@ -239,10 +239,7 @@ export const LinhaTempoPage: React.FC = () => {
                 />
               </div>
 
-              <Button
-                onClick={adicionarMarco}
-                className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs mt-1"
-              >
+              <Button onClick={adicionarMarco} className="w-full text-xs mt-1">
                 <Plus className="w-3.5 h-3.5 mr-1" />
                 Adicionar Marco
               </Button>

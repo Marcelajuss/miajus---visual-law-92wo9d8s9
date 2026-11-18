@@ -203,10 +203,7 @@ export const TabelaPage: React.FC = () => {
                 </div>
               </div>
 
-              <Button
-                onClick={adicionarLinha}
-                className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs mt-1"
-              >
+              <Button onClick={adicionarLinha} className="w-full text-xs mt-1">
                 <Plus className="w-3.5 h-3.5 mr-1" />
                 Inserir na Tabela
               </Button>

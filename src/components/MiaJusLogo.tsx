@@ -33,12 +33,12 @@ export const MiaJusLogo: React.FC<MiaJusLogoProps> = ({
   const content = (
     <div className={`inline-flex items-center gap-2.5 select-none leading-none ${className}`}>
       <MiaCharacter size={avatarSize} className="rounded-full" />
-      <div className="inline-flex flex-col leading-none">
+      <div className="inline-flex flex-col leading-none whitespace-nowrap">
         <span className={`font-bold tracking-tight text-slate-900 ${sizeClasses[size]}`}>
           MiaJus
         </span>
         <span
-          className={`font-sans font-medium uppercase text-[0.72em] tracking-wider mt-0.5 ${subtitleClasses[size]}`}
+          className={`font-sans font-medium uppercase text-[0.72em] tracking-wider mt-0.5 whitespace-nowrap ${subtitleClasses[size]}`}
           style={{ color: 'var(--iris-pink)' }}
         >
           Visual Law

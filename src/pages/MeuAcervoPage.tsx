@@ -164,7 +164,7 @@ export const MeuAcervoPage: React.FC = () => {
         <div className="flex items-center gap-2">
           <Button
             onClick={() => navigate('/formatacao-inteligente?modo=novo')}
-            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5 shadow-sm"
+            className="text-xs flex items-center gap-1.5 shadow-sm"
           >
             <Plus className="w-3.5 h-3.5" />
             <span>Novo Projeto Visual Law</span>
@@ -391,11 +391,7 @@ export const MeuAcervoPage: React.FC = () => {
               >
                 Cancelar
               </Button>
-              <Button
-                size="sm"
-                className="text-xs bg-grad-primario bg-grad-primario-hover text-white"
-                onClick={handleSalvarRenomear}
-              >
+              <Button size="sm" className="text-xs" onClick={handleSalvarRenomear}>
                 Salvar Novo Nome
               </Button>
             </DialogFooter>

@@ -176,10 +176,7 @@ export const GraficoPage: React.FC = () => {
               </div>
             </div>
 
-            <Button
-              onClick={adicionarPonto}
-              className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs"
-            >
+            <Button onClick={adicionarPonto} className="w-full text-xs">
               <Plus className="w-3.5 h-3.5 mr-1" />
               Adicionar ao Gráfico
             </Button>

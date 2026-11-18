@@ -243,10 +243,7 @@ export const FluxogramaPage: React.FC = () => {
                 </select>
               </div>
 
-              <Button
-                onClick={adicionarEtapa}
-                className="w-full bg-grad-primario bg-grad-primario-hover text-white text-xs mt-1"
-              >
+              <Button onClick={adicionarEtapa} className="w-full text-xs mt-1">
                 <Plus className="w-3.5 h-3.5 mr-1" />
                 Adicionar Etapa
               </Button>

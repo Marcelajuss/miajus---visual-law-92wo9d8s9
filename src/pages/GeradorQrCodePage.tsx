@@ -335,10 +335,7 @@ export const GeradorQrCodePage: React.FC = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
-              <Button
-                onClick={handleDownloadPng}
-                className="text-xs bg-grad-primario bg-grad-primario-hover text-white"
-              >
+              <Button onClick={handleDownloadPng} className="text-xs">
                 <Download className="w-3.5 h-3.5 mr-1.5" />
                 Baixar Imagem PNG
               </Button>

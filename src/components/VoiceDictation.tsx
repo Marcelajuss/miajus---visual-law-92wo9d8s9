@@ -98,10 +98,10 @@ export const VoiceDictation: React.FC<VoiceDictationProps> = ({
         type="button"
         onClick={toggleListening}
         title={isListening ? 'Clique para parar ditado por voz' : 'Ditar texto por voz (Português)'}
-        className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded-md border transition-all ${
+        className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-md border transition-all ${
           isListening
             ? 'bg-red-50 text-red-700 border-red-300 animate-pulse ring-2 ring-red-400'
-            : 'bg-white hover:bg-slate-50 text-slate-700 border-slate-200 shadow-sm'
+            : 'bg-[#F4EFF9] hover:bg-[#E9DCF5] text-[#1A1523] border-[#A88FBF] shadow-sm'
         }`}
       >
         {isListening ? (

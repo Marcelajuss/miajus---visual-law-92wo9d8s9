@@ -123,10 +123,7 @@ export const BlocoNotasPage: React.FC = () => {
           </p>
         </div>
 
-        <Button
-          onClick={handleCriarNova}
-          className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5 shadow-sm"
-        >
+        <Button onClick={handleCriarNova} className="text-xs flex items-center gap-1.5 shadow-sm">
           <Plus className="w-3.5 h-3.5" />
           <span>Nova Nota</span>
         </Button>
@@ -216,18 +213,14 @@ export const BlocoNotasPage: React.FC = () => {
 
                 <div className="flex items-center gap-2">
                   <VoiceDictation onTranscript={(t) => setTexto((prev) => prev + ' ' + t)} />
-                  <Button
-                    onClick={handleSalvarAtual}
-                    size="sm"
-                    className="bg-grad-primario bg-grad-primario-hover text-white text-xs h-7 px-3"
-                  >
+                  <Button onClick={handleSalvarAtual} size="sm" className="text-xs h-7 px-3">
                     Salvar
                   </Button>
                   <Button
                     variant="outline"
                     size="sm"
                     onClick={() => handleExcluirAtual(notaSelecionada.id)}
-                    className="text-xs text-red-600 border-slate-200 hover:bg-red-50 h-7 px-2"
+                    className="text-xs text-red-600 border-[#A88FBF] bg-white hover:bg-red-50 h-7 px-2"
                   >
                     <Trash2 className="w-3.5 h-3.5" />
                   </Button>

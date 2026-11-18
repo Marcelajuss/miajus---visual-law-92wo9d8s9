@@ -106,7 +106,7 @@ export const PendingIaToolPage: React.FC<PendingIaPageProps> = ({
             <span className="text-[11px] text-slate-400">Modo de Edição Manual</span>
             <Button
               onClick={() => navigate('/formatacao-inteligente')}
-              className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
+              className="text-xs flex items-center gap-1.5"
             >
               <span>Aplicar na Formatação Inteligente</span>
               <ArrowRight className="w-3.5 h-3.5" />
