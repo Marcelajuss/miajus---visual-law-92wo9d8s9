@@ -46,31 +46,31 @@ export const CentralFerramentas: React.FC = () => {
 
       {/* Cartão horizontal destacado: Gerador de Documentos com IA com a Mia (Critério 1) */}
       {destaqueTool && (
-        <div className="relative overflow-hidden rounded-2xl border border-[#E3D9EE] bg-grad-hero text-white p-6 sm:p-8 shadow-sm">
+        <div className="relative overflow-hidden rounded-2xl border border-[#A88FBF] bg-grad-suave text-[#1A1523] p-6 sm:p-8 shadow-sm">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 relative z-10">
             {/* Personagem Mia em destaque */}
             <div className="flex flex-col items-center flex-shrink-0">
               <MiaCharacter size="lg" expression="happy" className="bg-white/10 rounded-2xl p-1" />
-              <span className="text-[11px] font-medium text-[#F9A8D4] mt-1.5 tracking-wider uppercase">
+              <span className="text-[11px] font-semibold text-[#1A1523] mt-1.5 tracking-wider uppercase">
                 Mia • Assistente
               </span>
             </div>
 
             <div className="flex-1 text-center sm:text-left space-y-3">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-white/15 text-white border border-white/30">
+                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-white/60 text-[#1A1523] border border-[#A88FBF]">
                   Fluxo Prioritário
                 </span>
-                <span className="text-xs text-white/80">
+                <span className="text-xs text-[#1A1523]">
                   Gerador de Documentos com IA &rarr; Formatação Inteligente &rarr; Meu Acervo
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-serif font-bold tracking-tight text-white">
+              <h2 className="text-xl sm:text-2xl font-serif font-bold tracking-tight text-[#1A1523]">
                 {destaqueTool.nome}
               </h2>
 
-              <p className="text-sm text-white/85 leading-relaxed max-w-3xl">
+              <p className="text-sm text-[#1A1523] leading-relaxed max-w-3xl">
                 Crie petições, contratos e recursos já estruturados nos preceitos do Visual Law. No
                 momento, o fluxo funciona no <strong>modo manual guiado</strong> na Formatação
                 Inteligente. A geração automática por IA será habilitada assim que a chave do modelo
@@ -88,7 +88,7 @@ export const CentralFerramentas: React.FC = () => {
                 <Button
                   variant="outline"
                   onClick={() => setSelectedIaTool(destaqueTool)}
-                  className="bg-transparent text-white border-[#A88FBF] hover:bg-white/10 text-xs px-3 py-2 rounded-full"
+                  className="bg-transparent text-[#1A1523] border-[#A88FBF] hover:bg-white/40 text-xs px-3 py-2 rounded-full"
                 >
                   Status da Conexão IA
                 </Button>

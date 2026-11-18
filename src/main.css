@@ -318,6 +318,12 @@
     background-image: linear-gradient(135deg, #3e3359 0%, #5d4e86 55%, #8b6fb8 100%);
   }
 
+  /* Faixa/cartão destacado com degradê suave lilás → rosa (imagem de referência
+     da usuária, da esquerda para a direita). Usar com texto #1A1523 (contraste alto). */
+  .bg-grad-suave {
+    background-image: linear-gradient(90deg, #b39ddb 0%, #e8b4d8 100%);
+  }
+
   /* Painel/hero claro: fundo quase branco com leve degradê lilás → rosa */
   .bg-grad-hero-claro {
     background-image: linear-gradient(135deg, #f4eff9 0%, #fdf2f8 100%);

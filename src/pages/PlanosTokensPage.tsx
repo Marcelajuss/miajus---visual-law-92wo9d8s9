@@ -87,31 +87,31 @@ export const PlanosTokensPage: React.FC = () => {
         </div>
 
         {/* Plano Pro (Destaque) */}
-        <div className="p-6 rounded-2xl bg-grad-hero text-white border-2 border-[#5D4E86] shadow-md space-y-4 flex flex-col justify-between relative">
-          <span className="absolute -top-3 right-6 bg-[#EC4899] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
+        <div className="p-6 rounded-2xl bg-grad-suave text-[#1A1523] border-2 border-[#A88FBF] shadow-md space-y-4 flex flex-col justify-between relative">
+          <span className="absolute -top-3 right-6 bg-[#1A1523] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
             Mais Recomendado
           </span>
           <div className="space-y-3">
-            <span className="text-xs uppercase font-bold text-slate-400">Escritórios</span>
-            <h3 className="text-xl font-serif font-bold text-white">Visual Law Pro</h3>
-            <p className="text-2xl font-bold text-white">
-              R$ 189 <span className="text-xs font-normal text-slate-400">/mês (visual)</span>
+            <span className="text-xs uppercase font-bold text-[#1A1523]">Escritórios</span>
+            <h3 className="text-xl font-serif font-bold text-[#1A1523]">Visual Law Pro</h3>
+            <p className="text-2xl font-bold text-[#1A1523]">
+              R$ 189 <span className="text-xs font-normal text-[#1A1523]">/mês (visual)</span>
             </p>
-            <ul className="text-xs text-white/85 space-y-2 pt-2 border-t border-white/20">
+            <ul className="text-xs text-[#1A1523] space-y-2 pt-2 border-t border-[#A88FBF]">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
+                <Check className="w-3.5 h-3.5 text-[#1A1523]" />
                 Tudo do plano Individual
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
+                <Check className="w-3.5 h-3.5 text-[#1A1523]" />
                 QR Code com personalização de marca
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
+                <Check className="w-3.5 h-3.5 text-[#1A1523]" />
                 Acervo de Ícones completo
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
+                <Check className="w-3.5 h-3.5 text-[#1A1523]" />
                 Suporte prioritário via WhatsApp
               </li>
             </ul>
