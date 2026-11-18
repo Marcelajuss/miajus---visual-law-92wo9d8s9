@@ -151,7 +151,7 @@ export const MeuAcervoPage: React.FC = () => {
       {/* Cabeçalho */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
         <div>
-          <span className="text-xs uppercase font-bold tracking-widest text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+          <span className="bloco-identidade text-xs uppercase font-bold tracking-widest px-2 py-0.5 rounded">
             Repositório Local do Navegador
           </span>
           <h1 className="text-2xl font-serif font-bold text-slate-900 mt-1">Meu Acervo</h1>

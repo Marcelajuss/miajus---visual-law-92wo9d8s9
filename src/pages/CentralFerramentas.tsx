@@ -38,19 +38,22 @@ export const CentralFerramentas: React.FC = () => {
             Visual Law com foco na clareza e persuasão judiciária.
           </p>
         </div>
-        <div className="flex items-center gap-2 text-xs text-slate-500 bg-slate-100/80 px-3 py-1.5 rounded-lg border border-slate-200 self-start md:self-auto">
-          <Layers className="w-3.5 h-3.5 text-slate-600" />
+        <div className="bloco-identidade flex items-center gap-2 text-xs px-3 py-1.5 rounded-lg border border-[#E3D9EE] self-start md:self-auto">
+          <Layers className="w-3.5 h-3.5" style={{ color: 'var(--iris-pink)' }} />
           <span>Versão 1.0 • Modo Manual Estruturado</span>
         </div>
       </div>
 
       {/* Cartão horizontal destacado: Gerador de Documentos com IA com a Mia (Critério 1) */}
       {destaqueTool && (
-        <div className="relative overflow-hidden rounded-2xl border border-[#A88FBF] bg-grad-suave text-[#1A1523] p-6 sm:p-8 shadow-sm">
+        <div
+          className="relative overflow-hidden rounded-2xl bg-grad-suave text-[#1A1523] p-6 sm:p-8 shadow-sm"
+          style={{ borderWidth: 2, borderStyle: 'solid', borderColor: 'var(--iris-pink)' }}
+        >
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 relative z-10">
             {/* Personagem Mia em destaque */}
             <div className="flex flex-col items-center flex-shrink-0">
-              <MiaCharacter size="xl" className="rounded-2xl border border-[#A88FBF]" />
+              <MiaCharacter size="xl" />
               <span className="text-[11px] font-semibold text-[#1A1523] mt-1.5 tracking-wider uppercase">
                 Mia • Assistente
               </span>

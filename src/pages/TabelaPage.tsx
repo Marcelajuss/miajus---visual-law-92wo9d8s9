@@ -107,7 +107,7 @@ export const TabelaPage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <Button
             onClick={handleSalvarAcervo}
-            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
+            className="botao-acesso-rosa text-xs flex items-center gap-1.5"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Salvar no Meu Acervo</span>
@@ -242,7 +242,7 @@ export const TabelaPage: React.FC = () => {
             <div className="overflow-x-auto">
               <table className="w-full text-xs border-collapse">
                 <thead>
-                  <tr className="bg-[#3E3359] text-white text-left font-serif">
+                  <tr className="bg-accent-lilas text-[#1A1523] text-left font-serif">
                     <th className="p-2.5 rounded-tl-lg font-semibold">Item / Pedido</th>
                     <th className="p-2.5 font-semibold">Fundamento Legal / Tese</th>
                     <th className="p-2.5 font-semibold">Valor</th>

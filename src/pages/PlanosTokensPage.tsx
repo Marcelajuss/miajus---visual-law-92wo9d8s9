@@ -87,7 +87,10 @@ export const PlanosTokensPage: React.FC = () => {
         </div>
 
         {/* Plano Pro (Destaque) */}
-        <div className="p-6 rounded-2xl bg-grad-suave text-[#1A1523] border-2 border-[#A88FBF] shadow-md space-y-4 flex flex-col justify-between relative">
+        <div
+          className="p-6 rounded-2xl bg-grad-suave text-[#1A1523] shadow-md space-y-4 flex flex-col justify-between relative"
+          style={{ borderWidth: 2, borderStyle: 'solid', borderColor: 'var(--iris-pink)' }}
+        >
           <span className="absolute -top-3 right-6 bg-[#1A1523] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
             Mais Recomendado
           </span>

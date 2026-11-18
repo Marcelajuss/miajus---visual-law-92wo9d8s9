@@ -1,5 +1,5 @@
 import React from 'react'
-import miaAvatar from '@/assets/adff4496-feb7-4055-84c0-5e580b870162-2-1e2c8.jpg'
+import miaAvatar from '@/assets/6a7a74d8-ef24-45e7-8f79-a25ba4b97848-b9c26.png'
 
 interface MiaAvatarProps {
   size?: 'sm' | 'md' | 'lg' | 'xl'
@@ -8,31 +8,31 @@ interface MiaAvatarProps {
   className?: string
 }
 
-const sizePx = { sm: 40, md: 64, lg: 110, xl: 180 }
+const sizePx = { sm: 48, md: 76, lg: 132, xl: 224 }
 
 /**
- * Avatar oficial da Mia (imagem enviada pela usuária).
- * A foto é ampliada e deslocada via CSS para enquadrar o rosto dentro do quadrado,
- * sem distorcer a proporção original.
+ * Avatar oficial da Mia (nova imagem enviada pela usuária).
+ * A ilustração já vem com o fundo lilás arredondado no próprio arquivo (estilo app icon),
+ * então ela é exibida INTEIRA — sem recorte — para que o cartaz
+ * "Formatação inteligente e Petições que geram resultados" fique sempre visível e legível.
+ * Os tamanhos foram ampliados em relação à versão anterior para dar destaque ao cartaz.
  */
 export const MiaCharacter: React.FC<MiaAvatarProps> = ({ size = 'md', className = '' }) => {
   const px = sizePx[size]
 
   return (
-    <div
-      className={`relative inline-flex overflow-hidden flex-shrink-0 select-none rounded-xl bg-[#F4EFF9] ${className}`}
-      style={{ width: px, height: px }}
+    <img
+      src={miaAvatar}
+      alt="Mia - Assistente MiaJus"
+      draggable={false}
       role="img"
       aria-label="Mia - Assistente MiaJus"
-    >
-      <img
-        src={miaAvatar}
-        alt=""
-        draggable={false}
-        className="absolute max-w-none pointer-events-none"
-        style={{ width: '240%', left: '-70%', top: '-21%' }}
-      />
-    </div>
+      className={`inline-block flex-shrink-0 select-none rounded-xl ${className}`.replace(
+        'rounded-xl rounded-',
+        'rounded-',
+      )}
+      style={{ width: px, height: px }}
+    />
   )
 }
 

@@ -153,7 +153,7 @@ export const FluxogramaPage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <Button
             onClick={handleSalvarAcervo}
-            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5"
+            className="botao-acesso-rosa text-xs flex items-center gap-1.5"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Salvar no Meu Acervo</span>

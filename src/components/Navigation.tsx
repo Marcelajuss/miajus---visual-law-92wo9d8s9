@@ -147,21 +147,21 @@ export const MainFooter: React.FC = () => {
             <MiaJusLogo size="sm" linkToHome={false} />
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 text-xs text-slate-600">
+          <div className="bloco-identidade flex flex-wrap items-center gap-4 text-xs px-3 py-1.5 rounded-lg">
             <a
               href="https://wa.me/5511999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 hover:text-emerald-700 transition-colors"
+              className="inline-flex items-center gap-1.5 hover:opacity-80 transition-opacity"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
+              <MessageCircle className="w-3.5 h-3.5" />
               <span>Suporte WhatsApp</span>
             </a>
             <a
               href="mailto:suporte@miajus.adv.br"
-              className="inline-flex items-center gap-1.5 hover:text-[#7A5FA8] transition-colors"
+              className="inline-flex items-center gap-1.5 hover:opacity-80 transition-opacity"
             >
-              <Mail className="w-3.5 h-3.5 text-[#8B6FB8]" />
+              <Mail className="w-3.5 h-3.5" />
               <span>suporte@miajus.adv.br</span>
             </a>
           </div>

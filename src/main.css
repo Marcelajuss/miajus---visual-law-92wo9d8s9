@@ -75,6 +75,10 @@
     --chart-3: 271 27% 65%;
     --chart-4: 340 82% 76%;
     --chart-5: 263 34% 58%;
+
+    /* Rosa oficial da identidade (o mesmo rosa dos degradês), exposto como
+       variável para uso direto em textos e contornos "holográficos". */
+    --iris-pink: #ec4899;
   }
 
   .dark {
@@ -348,5 +352,31 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  /* Estilo exato pedido pela usuária para os blocos identidade da tela inicial
+     (Versão 1.0, Suporte WhatsApp, Repositório Local do Navegador):
+     degradê hex com alpha em minúscula + rosa oficial var(--iris-pink). */
+  .bloco-identidade {
+    background: linear-gradient(90deg, #e825b30d, #3fced20d);
+    color: var(--iris-pink);
+  }
+
+  /* Botões "Salvar no Meu Acervo" e equivalentes: fundo rosa var(--iris-pink)
+     com texto branco, SEMPRE visível sem hover (bug relatado pela usuária:
+     "a cor só aparece quando clica em cima"). Desabilitado mantém opacidade
+     moderada para continuar perceptível. */
+  .botao-acesso-rosa {
+    background-color: var(--iris-pink);
+    color: #ffffff;
+    border: 1px solid var(--iris-pink);
+  }
+  .botao-acesso-rosa:hover:not(:disabled) {
+    background-color: #db2777;
+    border-color: #db2777;
+    color: #ffffff;
+  }
+  .botao-acesso-rosa:disabled {
+    opacity: 0.65;
   }
 }

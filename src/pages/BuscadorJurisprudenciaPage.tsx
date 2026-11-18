@@ -238,7 +238,10 @@ export const BuscadorJurisprudenciaPage: React.FC = () => {
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
                   <div className="flex items-center gap-2">
-                    <span className="px-2.5 py-0.5 rounded text-xs font-bold bg-[#3E3359] text-white">
+                    <span
+                      className="px-2.5 py-0.5 rounded text-xs font-bold bg-accent-lilas border"
+                      style={{ borderColor: 'var(--iris-pink)' }}
+                    >
                       {item.tribunal}
                     </span>
                     <span className="font-bold text-sm text-slate-900 font-serif">

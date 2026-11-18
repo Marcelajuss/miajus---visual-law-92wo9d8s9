@@ -175,7 +175,7 @@ export const FormatacaoInteligente: React.FC = () => {
           <Button
             onClick={handleSalvarAcervo}
             disabled={salvando}
-            className="bg-grad-primario bg-grad-primario-hover text-white text-xs flex items-center gap-1.5 shadow-sm"
+            className="botao-acesso-rosa text-xs flex items-center gap-1.5 shadow-sm"
           >
             <Save className="w-3.5 h-3.5" />
             <span>{salvando ? 'Salvando...' : 'Salvar no Meu Acervo'}</span>
