@@ -51,7 +51,7 @@ export const CentralFerramentas: React.FC = () => {
             {/* Personagem Mia em destaque */}
             <div className="flex flex-col items-center flex-shrink-0">
               <MiaCharacter size="lg" expression="happy" className="bg-white/10 rounded-2xl p-1" />
-              <span className="text-[11px] font-medium text-amber-300 mt-1.5 tracking-wider uppercase">
+              <span className="text-[11px] font-medium text-[#F9A8D4] mt-1.5 tracking-wider uppercase">
                 Mia • Assistente
               </span>
             </div>

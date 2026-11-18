@@ -303,8 +303,8 @@ export const BuscadorJurisprudenciaPage: React.FC = () => {
                   >
                     {copiadoId === item.id ? (
                       <>
-                        <Check className="w-3.5 h-3.5 text-emerald-600" />
-                        <span className="text-emerald-700 font-semibold">Ementa Copiada!</span>
+                        <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
+                        <span className="text-[#5D4E86] font-semibold">Ementa Copiada!</span>
                       </>
                     ) : (
                       <>

@@ -372,7 +372,7 @@ export const FormatacaoInteligente: React.FC = () => {
                 onClick={() => adicionarElementoVisual('Fluxograma')}
                 className="text-[11px] justify-start h-8 px-2"
               >
-                <Columns className="w-3.5 h-3.5 mr-1.5 text-emerald-600" />+ Fluxograma
+                <Columns className="w-3.5 h-3.5 mr-1.5 text-[#8B6FB8]" />+ Fluxograma
               </Button>
               <Button
                 type="button"
@@ -381,7 +381,7 @@ export const FormatacaoInteligente: React.FC = () => {
                 onClick={() => adicionarElementoVisual('Tabela')}
                 className="text-[11px] justify-start h-8 px-2"
               >
-                <TableIcon className="w-3.5 h-3.5 mr-1.5 text-purple-600" />+ Tabela de Pedidos
+                <TableIcon className="w-3.5 h-3.5 mr-1.5 text-[#EC4899]" />+ Tabela de Pedidos
               </Button>
               <Button
                 type="button"
@@ -390,7 +390,7 @@ export const FormatacaoInteligente: React.FC = () => {
                 onClick={() => adicionarElementoVisual('Gráfico')}
                 className="text-[11px] justify-start h-8 px-2"
               >
-                <BarChart2 className="w-3.5 h-3.5 mr-1.5 text-amber-600" />+ Gráfico Estatístico
+                <BarChart2 className="w-3.5 h-3.5 mr-1.5 text-[#5D4E86]" />+ Gráfico Estatístico
               </Button>
             </div>
 

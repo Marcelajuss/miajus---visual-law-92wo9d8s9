@@ -29,7 +29,7 @@ export const PlanosTokensPage: React.FC = () => {
         <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Saldo Atual de Tokens</span>
-            <Coins className="w-4 h-4 text-amber-500" />
+            <Coins className="w-4 h-4 text-[#8B6FB8]" />
           </div>
           <p className="text-2xl font-serif font-bold text-slate-900">50.000</p>
           <p className="text-[11px] text-slate-500">Cota inicial de avaliação da v1</p>
@@ -68,15 +68,15 @@ export const PlanosTokensPage: React.FC = () => {
             </p>
             <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
                 Formatação Inteligente Visual Law
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
                 Fluxogramas e Linhas do Tempo ilimitados
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
                 Exportação em DOCX e PDF
               </li>
             </ul>
@@ -88,7 +88,7 @@ export const PlanosTokensPage: React.FC = () => {
 
         {/* Plano Pro (Destaque) */}
         <div className="p-6 rounded-2xl bg-grad-hero text-white border-2 border-[#5D4E86] shadow-md space-y-4 flex flex-col justify-between relative">
-          <span className="absolute -top-3 right-6 bg-amber-400 text-slate-950 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
+          <span className="absolute -top-3 right-6 bg-[#EC4899] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
             Mais Recomendado
           </span>
           <div className="space-y-3">
@@ -99,19 +99,19 @@ export const PlanosTokensPage: React.FC = () => {
             </p>
             <ul className="text-xs text-white/85 space-y-2 pt-2 border-t border-white/20">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-amber-400" />
+                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
                 Tudo do plano Individual
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-amber-400" />
+                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
                 QR Code com personalização de marca
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-amber-400" />
+                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
                 Acervo de Ícones completo
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-amber-400" />
+                <Check className="w-3.5 h-3.5 text-[#F9A8D4]" />
                 Suporte prioritário via WhatsApp
               </li>
             </ul>
@@ -134,15 +134,15 @@ export const PlanosTokensPage: React.FC = () => {
             </p>
             <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
                 Multi-usuários para o escritório
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
                 Identidade visual institucional exclusiva
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-[#8B6FB8]" />
                 Biblioteca compartilhada de modelos
               </li>
             </ul>

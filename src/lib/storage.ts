@@ -143,7 +143,7 @@ const NOTAS_INICIAIS: NotaItem[] = [
     titulo: 'Checklist de Elementos Visuais antes do Protocolo',
     texto:
       '1. Verificar contraste para impressão em preto e branco.\n2. Testar legibilidade de QR Codes com smartphone.\n3. Conferir se títulos e resumos não excedem 3 linhas.\n4. Incluir aviso legal da fonte de dados.',
-    cor: '#FEF3C7',
+    cor: '#FCE7F3',
     assunto: 'Qualidade Técnica',
     dataCriacao: '11/03/2025',
   },
@@ -152,7 +152,7 @@ const NOTAS_INICIAIS: NotaItem[] = [
     titulo: 'Resumo da Tese: Desvio Produtivo do Consumidor',
     texto:
       'Tese consolidada no STJ (Tema do tempo vital). Fundamentar com a perda de tempo útil tentando solucionar falha evidente do serviço bancário sem êxito.',
-    cor: '#ECFDF5',
+    cor: '#F4EFF9',
     assunto: 'Direito do Consumidor',
     dataCriacao: '09/03/2025',
   },
