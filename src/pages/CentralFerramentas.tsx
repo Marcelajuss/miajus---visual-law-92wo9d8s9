@@ -47,7 +47,7 @@ export const CentralFerramentas: React.FC = () => {
       {/* Cartão horizontal destacado: Gerador de Documentos com IA com a Mia (Critério 1) */}
       {destaqueTool && (
         <div
-          className="relative overflow-hidden rounded-2xl bg-grad-suave text-[#1A1523] p-6 sm:p-8 shadow-sm"
+          className="relative overflow-hidden rounded-2xl bg-grad-avatar-lilas text-[#1A1523] p-6 sm:p-8 shadow-sm"
           style={{ borderWidth: 2, borderStyle: 'solid', borderColor: 'var(--iris-pink)' }}
         >
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 relative z-10">

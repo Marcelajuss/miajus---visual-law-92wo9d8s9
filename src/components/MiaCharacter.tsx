@@ -12,27 +12,52 @@ const sizePx = { sm: 48, md: 76, lg: 132, xl: 224 }
 
 /**
  * Avatar oficial da Mia (nova imagem enviada pela usuária).
- * A ilustração já vem com o fundo lilás arredondado no próprio arquivo (estilo app icon),
- * então ela é exibida INTEIRA — sem recorte — para que o cartaz
- * "Formatação inteligente e Petições que geram resultados" fique sempre visível e legível.
- * Os tamanhos foram ampliados em relação à versão anterior para dar destaque ao cartaz.
+ *
+ * A ilustração traz o fundo lilás arredondado no PRÓPRIO arquivo (estilo app icon),
+ * mas esse lilás vem com bordas irregulares na origem — quando a imagem era exibida
+ * como <img> com rounded, essas bordas tortas apareciam (relato da usuária).
+ *
+ * Correção: a imagem é renderizada dentro de um CONTÊINER com cantos arredondados
+ * uniformes (rounded-[22%], o mesmo formato app icon), overflow-hidden e um fundo
+ * lilás uniforme (#D8C6EE, o lilás claro aprovado da paleta) atrás dela. A imagem
+ * é ampliada ~12% (scale 1.12) para que a borda irregular do arquivo fique sempre
+ * FORA do contêiner — o que se vê é o lilás liso do interior da ilustração e,
+ * onde eventualmente sobra, o lilás uniforme do fundo do contêiner.
+ *
+ * A avatar continua exibida INTEIRA e nos MESMOS tamanhos ampliados da v0.0.8
+ * (o texto do cartaz "Formatação inteligente e Petições que geram resultados"
+ * segue legível): o recorte acontece só na franja da borda, não no conteúdo.
  */
 export const MiaCharacter: React.FC<MiaAvatarProps> = ({ size = 'md', className = '' }) => {
   const px = sizePx[size]
 
+  // Qualquer rounded-* recebido de fora é descartado: o formato uniforme do
+  // contêiner é quem garante bordas regulares em todos os usos da avatar.
+  const classesExternas = className.replace(/\brounded(?:-[^\s]+)?/g, '').trim()
+
   return (
-    <img
-      src={miaAvatar}
-      alt="Mia - Assistente MiaJus"
-      draggable={false}
+    <div
       role="img"
       aria-label="Mia - Assistente MiaJus"
-      className={`inline-block flex-shrink-0 select-none rounded-xl ${className}`.replace(
-        'rounded-xl rounded-',
-        'rounded-',
-      )}
-      style={{ width: px, height: px }}
-    />
+      draggable={false}
+      className={`inline-block flex-shrink-0 select-none overflow-hidden rounded-[22%] ${classesExternas}`}
+      style={{ width: px, height: px, backgroundColor: '#D8C6EE' }}
+    >
+      <img
+        src={miaAvatar}
+        alt=""
+        aria-hidden="true"
+        draggable={false}
+        className="block"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          transform: 'scale(1.12)',
+          transformOrigin: 'center',
+        }}
+      />
+    </div>
   )
 }
 
